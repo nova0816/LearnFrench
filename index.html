@@ -35,7 +35,7 @@
         <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
         <div class="logo-text">
           <h1>Élan</h1>
-          <span class="subtitle">Learn French, Beautifully</span>
+          <span class="subtitle">Conversational French</span>
         </div>
       </div>
       
@@ -62,7 +62,7 @@
     <!-- Main Content Area -->
     <main class="main-content" id="main-content">
       
-      <!-- Explore View -->
+      <!-- Explore View (Dialogues Chat) -->
       <section id="view-explore" class="app-view active">
         <div class="sentences-grid" id="sentences-grid">
           <!-- Dynamically populated cards -->
@@ -78,8 +78,9 @@
               <!-- Card Front (French) -->
               <div class="card-front">
                 <span class="card-badge" id="card-tag">Category</span>
+                <span class="speaker-bubble-label" id="card-speaker">Speaker</span>
                 <p class="french-text" id="card-french">Bonjour ! Comment ça va ?</p>
-                <p class="phonetic-text" id="card-phonetic">bohn-zhoor! koh-mahn sah vah?</p>
+                <p class="phonetic-text" id="card-phonetic">bohn-zhoor! koh-mahn sah vah ?</p>
                 <div class="card-hint">
                   <i class="fa-solid fa-rotate-left"></i> Tap to flip & reveal English
                 </div>
@@ -99,8 +100,11 @@
 
           <!-- Flashcard Controls -->
           <div class="flashcard-actions">
-            <button id="card-btn-listen" class="action-btn circle-btn main-action" title="Listen">
+            <button id="card-btn-listen" class="action-btn circle-btn main-action" title="Listen (Normal)">
               <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <button id="card-btn-listen-slow" class="action-btn circle-btn slow-action" title="Listen (Slow)">
+              <i class="fa-solid fa-snail"></i>
             </button>
             <button id="card-btn-practice" class="action-btn circle-btn mic-btn" title="Practice Speaking">
               <i class="fa-solid fa-microphone"></i>
@@ -173,8 +177,8 @@
     <!-- Navigation Bar -->
     <nav class="app-navbar">
       <button class="nav-item active" id="nav-explore" onclick="switchTab('explore')">
-        <i class="fa-solid fa-compass"></i>
-        <span>Explore</span>
+        <i class="fa-solid fa-comments"></i>
+        <span>Dialogues</span>
       </button>
       <button class="nav-item" id="nav-flashcards" onclick="switchTab('flashcards')">
         <i class="fa-solid fa-layer-group"></i>
@@ -185,18 +189,6 @@
         <span>Starred</span>
       </button>
     </nav>
-    
-    <!-- Audio Speed Controller Dialog / Panel -->
-    <div class="speed-controller-float">
-      <button class="speed-toggle-btn" id="speed-toggle" title="Playback Speed">
-        <i class="fa-solid fa-gauge-high"></i> <span id="speed-label">1.0x</span>
-      </button>
-      <div class="speed-dropdown hidden" id="speed-dropdown">
-        <div class="speed-option" data-speed="0.7">0.7x (Slow)</div>
-        <div class="speed-option active" data-speed="1.0">1.0x (Normal)</div>
-        <div class="speed-option" data-speed="1.2">1.2x (Fast)</div>
-      </div>
-    </div>
 
   </div>
 

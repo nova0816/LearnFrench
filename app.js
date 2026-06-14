@@ -6,7 +6,6 @@ let favorites = JSON.parse(localStorage.getItem('elan_favorites')) || [];
 let mastered = JSON.parse(localStorage.getItem('elan_mastered')) || [];
 let currentTab = 'explore';
 let currentCategory = 'All';
-let playbackSpeed = 1.0;
 let currentAudio = null;
 
 // Flashcard Mode State
@@ -33,7 +32,7 @@ async function initApp() {
   try {
     const response = await fetch('sentences.json');
     if (!response.ok) throw new Error('Failed to load sentences.json');
-    sentences = await response.ok ? await response.json() : [];
+    sentences = await response.json();
   } catch (error) {
     console.error('Error loading sentences:', error);
     showErrorMessage();
@@ -103,7 +102,7 @@ window.selectCategory = function(category) {
 };
 
 // ==========================================
-// RENDER EXPLORE LIST
+// RENDER EXPLORE LIST (CHAT BUBBLE LAYOUT)
 // ==========================================
 function renderExploreGrid() {
   const grid = document.getElementById('sentences-grid');
@@ -124,17 +123,22 @@ function renderExploreGrid() {
   grid.innerHTML = filtered.map(s => {
     const isFav = favorites.includes(s.id);
     const isMast = mastered.includes(s.id);
+    
+    // Determine chat bubble alignment (left for Guest/Customer/Passenger, right for Staff)
+    const isLeft = s.speaker === 'Guest' || s.speaker === 'Passenger' || s.speaker === 'Customer';
+    const alignClass = isLeft ? 'left' : 'right';
+
     return `
-      <div class="sentence-card" id="card-${s.id}">
-        <div class="card-meta">
-          <span class="card-category">${s.category}</span>
-          <div class="card-actions">
-            <button class="card-action-btn check-btn ${isMast ? 'active' : ''}" 
+      <div class="dialogue-bubble ${alignClass}" id="bubble-${s.id}">
+        <div class="bubble-header">
+          <span class="speaker-tag">${s.speaker}</span>
+          <div class="bubble-actions">
+            <button class="bubble-action-btn check-btn ${isMast ? 'active' : ''}" 
                     onclick="event.stopPropagation(); toggleMastered('${s.id}')"
                     title="${isMast ? 'Marked as mastered' : 'Mark as mastered'}">
               <i class="fa-solid ${isMast ? 'fa-circle-check' : 'fa-circle'}"></i>
             </button>
-            <button class="card-action-btn star-btn ${isFav ? 'active' : ''}" 
+            <button class="bubble-action-btn star-btn ${isFav ? 'active' : ''}" 
                     onclick="event.stopPropagation(); toggleFavorite('${s.id}')"
                     title="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
               <i class="fa-solid fa-star"></i>
@@ -142,18 +146,21 @@ function renderExploreGrid() {
           </div>
         </div>
         
-        <div onclick="playAudio('${s.id}')">
-          <p class="french-phrase">${s.french}</p>
-          <p class="phonetic-guide">${s.phonetic}</p>
+        <div onclick="playAudio('${s.id}', false)">
+          <p class="french-bubble-text">${s.french}</p>
+          <p class="phonetic-bubble-text">${s.phonetic}</p>
           
-          <div class="english-translation">
+          <div class="english-bubble-text">
             <span>${s.english}</span>
-            <div class="card-tools">
-              <button class="btn-pill" onclick="event.stopPropagation(); playAudio('${s.id}')">
-                <i class="fa-solid fa-volume-high"></i> Listen
+            <div class="bubble-tools">
+              <button class="bubble-btn" onclick="event.stopPropagation(); playAudio('${s.id}', false)" title="Play Normal Speed">
+                <i class="fa-solid fa-volume-high"></i> Play
               </button>
-              <button class="btn-pill practice-btn-pill" onclick="event.stopPropagation(); openSpeechOverlay('${s.id}')">
-                <i class="fa-solid fa-microphone"></i> Practice
+              <button class="bubble-btn slow-play-btn" onclick="event.stopPropagation(); playAudio('${s.id}', true)" title="Play Slow Speed">
+                <i class="fa-solid fa-snail"></i> Slow
+              </button>
+              <button class="bubble-btn mic-play-btn" onclick="event.stopPropagation(); openSpeechOverlay('${s.id}')" title="Practice Speaking">
+                <i class="fa-solid fa-microphone"></i> Talk
               </button>
             </div>
           </div>
@@ -164,22 +171,23 @@ function renderExploreGrid() {
 }
 
 // ==========================================
-// AUDIO PLAYBACK CONTROLLER
+// AUDIO PLAYBACK CONTROLLER (DUAL-SPEED SUPPORT)
 // ==========================================
-window.playAudio = function(id) {
+window.playAudio = function(id, isSlow = false) {
   if (currentAudio) {
     currentAudio.pause();
   }
   
-  currentAudio = new Audio(`audio/${id}.mp3`);
-  currentAudio.playbackRate = playbackSpeed;
+  const fileSuffix = isSlow ? '_slow' : '';
+  currentAudio = new Audio(`audio/${id}${fileSuffix}.mp3`);
   
-  // Visual feedback: briefly highlight the card playing
-  const card = document.getElementById(`card-${id}`);
-  if (card) {
-    card.style.borderColor = 'var(--accent)';
+  // Visual feedback: highlight bubble borders during playback
+  const bubble = document.getElementById(`bubble-${id}`);
+  if (bubble) {
+    const originalBorder = bubble.style.borderColor;
+    bubble.style.borderColor = isSlow ? 'var(--amber)' : 'var(--accent)';
     currentAudio.onended = () => {
-      card.style.borderColor = 'var(--glass-border)';
+      bubble.style.borderColor = originalBorder;
     };
   }
 
@@ -242,34 +250,40 @@ function renderFavoritesGrid() {
 
   grid.innerHTML = favItems.map(s => {
     const isMast = mastered.includes(s.id);
+    const isLeft = s.speaker === 'Guest' || s.speaker === 'Passenger' || s.speaker === 'Customer';
+    const alignClass = isLeft ? 'left' : 'right';
+
     return `
-      <div class="sentence-card" id="card-${s.id}">
-        <div class="card-meta">
-          <span class="card-category">${s.category}</span>
-          <div class="card-actions">
-            <button class="card-action-btn check-btn ${isMast ? 'active' : ''}" 
+      <div class="dialogue-bubble ${alignClass}" id="bubble-${s.id}">
+        <div class="bubble-header">
+          <span class="speaker-tag">${s.speaker}</span>
+          <div class="bubble-actions">
+            <button class="bubble-action-btn check-btn ${isMast ? 'active' : ''}" 
                     onclick="event.stopPropagation(); toggleMastered('${s.id}')">
               <i class="fa-solid ${isMast ? 'fa-circle-check' : 'fa-circle'}"></i>
             </button>
-            <button class="card-action-btn star-btn active" 
+            <button class="bubble-action-btn star-btn active" 
                     onclick="event.stopPropagation(); toggleFavorite('${s.id}')">
               <i class="fa-solid fa-star"></i>
             </button>
           </div>
         </div>
         
-        <div onclick="playAudio('${s.id}')">
-          <p class="french-phrase">${s.french}</p>
-          <p class="phonetic-guide">${s.phonetic}</p>
+        <div onclick="playAudio('${s.id}', false)">
+          <p class="french-bubble-text">${s.french}</p>
+          <p class="phonetic-bubble-text">${s.phonetic}</p>
           
-          <div class="english-translation">
+          <div class="english-bubble-text">
             <span>${s.english}</span>
-            <div class="card-tools">
-              <button class="btn-pill" onclick="event.stopPropagation(); playAudio('${s.id}')">
-                <i class="fa-solid fa-volume-high"></i> Listen
+            <div class="bubble-tools">
+              <button class="bubble-btn" onclick="event.stopPropagation(); playAudio('${s.id}', false)">
+                <i class="fa-solid fa-volume-high"></i> Play
               </button>
-              <button class="btn-pill practice-btn-pill" onclick="event.stopPropagation(); openSpeechOverlay('${s.id}')">
-                <i class="fa-solid fa-microphone"></i> Practice
+              <button class="bubble-btn slow-play-btn" onclick="event.stopPropagation(); playAudio('${s.id}', true)">
+                <i class="fa-solid fa-snail"></i> Slow
+              </button>
+              <button class="bubble-btn mic-play-btn" onclick="event.stopPropagation(); openSpeechOverlay('${s.id}')">
+                <i class="fa-solid fa-microphone"></i> Talk
               </button>
             </div>
           </div>
@@ -307,6 +321,7 @@ function renderFlashcard() {
   
   // Render Front
   document.getElementById('card-tag').textContent = currentCard.category;
+  document.getElementById('card-speaker').textContent = currentCard.speaker;
   document.getElementById('card-french').textContent = currentCard.french;
   document.getElementById('card-phonetic').textContent = currentCard.phonetic;
   
@@ -372,7 +387,6 @@ function initSpeechRecognition() {
 
   recognition.onresult = (event) => {
     const speechResult = event.results[0][0].transcript;
-    const confidence = event.results[0][0].confidence;
     processSpeechResult(speechResult);
   };
 }
@@ -461,7 +475,7 @@ function calculateSimilarity(s1, s2) {
 
   if (words1.length === 0 || words2.length === 0) return 0;
 
-  // Let's count matching words
+  // Count matching words
   let matches = 0;
   const set2 = new Set(words2);
   
@@ -516,33 +530,6 @@ window.switchTab = function(tabName) {
 // EVENT LISTENERS
 // ==========================================
 function setupEventListeners() {
-  // Speed controller logic
-  const speedToggle = document.getElementById('speed-toggle');
-  const speedDropdown = document.getElementById('speed-dropdown');
-
-  speedToggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    speedDropdown.classList.toggle('hidden');
-  });
-
-  document.querySelectorAll('.speed-option').forEach(option => {
-    option.addEventListener('click', (e) => {
-      e.stopPropagation();
-      playbackSpeed = parseFloat(option.dataset.speed);
-      
-      document.querySelectorAll('.speed-option').forEach(o => o.classList.remove('active'));
-      option.classList.add('active');
-      
-      document.getElementById('speed-label').textContent = `${playbackSpeed}x`;
-      speedDropdown.classList.add('hidden');
-    });
-  });
-
-  // Close dropdowns on body clicks
-  document.body.addEventListener('click', () => {
-    speedDropdown.classList.add('hidden');
-  });
-
   // Close Speech overlay
   document.getElementById('close-speech-overlay').addEventListener('click', () => {
     if (recognition && isRecording) {
@@ -575,7 +562,14 @@ function setupEventListeners() {
   document.getElementById('card-btn-listen').addEventListener('click', (e) => {
     e.stopPropagation();
     if (quizQueue.length > 0) {
-      playAudio(quizQueue[quizIndex].id);
+      playAudio(quizQueue[quizIndex].id, false);
+    }
+  });
+
+  document.getElementById('card-btn-listen-slow').addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (quizQueue.length > 0) {
+      playAudio(quizQueue[quizIndex].id, true);
     }
   });
 

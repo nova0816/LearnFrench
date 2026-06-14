@@ -13,6 +13,12 @@
   --accent-glow: rgba(139, 92, 246, 0.2);
   --accent-glow-strong: rgba(139, 92, 246, 0.4);
   
+  /* Dialogue Specific Accent Colors */
+  --bubble-left-bg: hsl(240, 12%, 15%);
+  --bubble-right-bg: hsl(248, 20%, 17%);
+  --bubble-left-border: rgba(255, 255, 255, 0.06);
+  --bubble-right-border: rgba(139, 92, 246, 0.18);
+  
   --text-primary: hsl(0, 0%, 98%);
   --text-secondary: hsl(240, 8%, 75%);
   --text-muted: hsl(240, 5%, 55%);
@@ -22,6 +28,8 @@
   --success-glow: rgba(16, 185, 129, 0.2);
   --error: hsl(350, 89%, 60%);
   --error-glow: rgba(239, 68, 68, 0.2);
+  
+  --amber: hsl(38, 92%, 50%); /* For the slow playback snail button */
   
   /* Glassmorphism Styles */
   --glass-bg: rgba(255, 255, 255, 0.03);
@@ -235,156 +243,180 @@ body {
 }
 
 /* ==========================================
-   EXPLORE / SENTENCES GRID
+   DIALOGUE MESSAGING (CHAT) VIEW
    ========================================== */
 .sentences-grid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  padding-top: 8px;
 }
 
-.sentence-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 16px;
+.dialogue-bubble {
+  max-width: 88%;
+  padding: 14px 18px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  transition: var(--transition-bounce);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  animation: bubblePop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.15);
   cursor: pointer;
-  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
-.sentence-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 100% 0%, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
-  pointer-events: none;
+@keyframes bubblePop {
+  from { transform: scale(0.9) translateY(15px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
 }
 
-.sentence-card:hover {
-  border-color: rgba(139, 92, 246, 0.25);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.sentence-card:active {
+.dialogue-bubble:active {
   transform: scale(0.98);
 }
 
-/* Card Header (Category, Favorite, Mastered status) */
-.card-meta {
+/* Left Aligned Bubble (Guest/Customer) */
+.dialogue-bubble.left {
+  align-self: flex-start;
+  background-color: var(--bubble-left-bg);
+  border: 1px solid var(--bubble-left-border);
+  border-radius: 18px 18px 18px 4px;
+}
+
+/* Right Aligned Bubble (Receptionist/Driver/Waiter/Cashier) */
+.dialogue-bubble.right {
+  align-self: flex-end;
+  background-color: var(--bubble-right-bg);
+  border: 1px solid var(--bubble-right-border);
+  border-radius: 18px 18px 4px 18px;
+  border-right-width: 2px;
+}
+
+/* Bubble Header (Speaker & Star/Check buttons) */
+.bubble-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  gap: 12px;
 }
 
-.card-category {
+.speaker-tag {
+  font-family: 'Outfit', sans-serif;
   font-size: 11px;
-  text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 0.5px;
-  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dialogue-bubble.left .speaker-tag {
+  color: var(--text-muted);
+}
+
+.dialogue-bubble.right .speaker-tag {
   color: var(--accent-light);
 }
 
-.card-actions {
+.bubble-actions {
   display: flex;
-  gap: 6px;
-  z-index: 2; /* Keep above clickable card */
+  gap: 4px;
+  z-index: 2;
 }
 
-.card-action-btn {
+.bubble-action-btn {
   background: none;
   border: none;
   color: var(--text-muted);
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   transition: var(--transition-smooth);
 }
 
-.card-action-btn:hover {
-  background-color: var(--glass-bg);
+.bubble-action-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
   color: var(--text-primary);
 }
 
-.card-action-btn.star-btn.active {
+.bubble-action-btn.star-btn.active {
   color: var(--text-star);
-  text-shadow: 0 0 8px rgba(234, 179, 8, 0.5);
+  text-shadow: 0 0 6px rgba(234, 179, 8, 0.4);
 }
 
-.card-action-btn.check-btn.active {
+.bubble-action-btn.check-btn.active {
   color: var(--success);
 }
 
-/* Card Typography */
-.french-phrase {
+/* Bubble Typography */
+.french-bubble-text {
   font-family: 'Outfit', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 1.4;
   color: var(--text-primary);
-  margin-bottom: 4px;
-  line-height: 1.3;
+  margin-bottom: 2px;
 }
 
-.phonetic-guide {
-  font-size: 12px;
+.phonetic-bubble-text {
+  font-size: 11px;
   color: var(--text-muted);
   font-style: italic;
   margin-bottom: 8px;
 }
 
-.english-translation {
-  font-size: 14px;
+.english-bubble-text {
+  font-size: 13px;
   color: var(--text-secondary);
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
-  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding-top: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
-/* Inline audio & microphone triggers */
-.card-tools {
+/* Audio & Practice Buttons inside speech bubble */
+.bubble-tools {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
-  margin-top: 8px;
 }
 
-.btn-pill {
-  background-color: var(--bg-secondary);
+.bubble-btn {
+  background-color: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-border);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
   font-weight: 500;
   color: var(--text-secondary);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   cursor: pointer;
   transition: var(--transition-smooth);
 }
 
-.btn-pill:hover {
+.bubble-btn:hover {
   background-color: var(--accent);
   color: white;
   border-color: transparent;
 }
 
-.btn-pill.practice-btn-pill:hover {
-  background-color: #ec4899; /* Pink accent for speaking */
+/* Dedicated snail button color */
+.bubble-btn.slow-play-btn:hover {
+  background-color: var(--amber);
+  color: white;
+  border-color: transparent;
+}
+
+.bubble-btn.mic-play-btn:hover {
+  background-color: #ec4899;
+  color: white;
+  border-color: transparent;
 }
 
 /* ==========================================
@@ -403,7 +435,7 @@ body {
 .flashcard {
   width: 100%;
   height: 280px;
-  perspective: 1000px; /* 3D effect depth */
+  perspective: 1000px;
   cursor: pointer;
 }
 
@@ -425,7 +457,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide back during rotation */
+  backface-visibility: hidden;
   border-radius: var(--radius-xl);
   padding: 30px;
   display: flex;
@@ -444,7 +476,7 @@ body {
 .card-back {
   background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
   color: var(--text-primary);
-  transform: rotateY(180deg); /* Pre-flipped 180 degrees */
+  transform: rotateY(180deg);
 }
 
 .card-badge {
@@ -460,6 +492,20 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.speaker-bubble-label {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid var(--glass-border);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .flashcard .french-text {
@@ -497,17 +543,17 @@ body {
 /* Flashcard Play & Record Row */
 .flashcard-actions {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .circle-btn {
-  width: 56px;
-  height: 56px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   border: 1px solid var(--glass-border);
   background: var(--bg-card);
   color: var(--text-primary);
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,6 +573,13 @@ body {
   box-shadow: 0 6px 20px var(--accent-glow-strong);
 }
 
+.circle-btn.slow-action {
+  background: linear-gradient(135deg, var(--amber), hsl(38, 92%, 60%));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 6px 20px rgba(230, 150, 0, 0.3);
+}
+
 .circle-btn.mic-btn {
   background: linear-gradient(135deg, #ec4899, #f43f5e);
   border-color: transparent;
@@ -534,7 +587,7 @@ body {
   box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
 }
 
-/* Spech Feedback Toast inside cards */
+/* Speech Feedback Toast inside cards */
 .speech-feedback-card {
   width: 100%;
   background-color: var(--bg-secondary);
@@ -903,75 +956,4 @@ body {
 .nav-item.active i {
   transform: translateY(-2px);
   filter: drop-shadow(0 0 5px var(--accent-glow-strong));
-}
-
-/* ==========================================
-   PLAYBACK SPEED CONTROLLER
-   ========================================== */
-.speed-controller-float {
-  position: absolute;
-  bottom: 84px; /* Right above navbar */
-  right: 16px;
-  z-index: 15;
-}
-
-.speed-toggle-btn {
-  background-color: var(--bg-card);
-  border: 1px solid var(--glass-border);
-  color: var(--text-secondary);
-  border-radius: 20px;
-  padding: 6px 12px;
-  font-size: 11px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: var(--transition-smooth);
-}
-
-.speed-toggle-btn:hover {
-  border-color: var(--accent);
-  color: var(--text-primary);
-}
-
-.speed-dropdown {
-  position: absolute;
-  bottom: 34px;
-  right: 0;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--glass-shadow);
-  padding: 4px;
-  min-width: 110px;
-  display: flex;
-  flex-direction: column;
-  animation: fadeIn 0.2s ease;
-}
-
-.speed-dropdown.hidden {
-  display: none;
-}
-
-.speed-option {
-  padding: 8px 12px;
-  font-size: 12px;
-  color: var(--text-secondary);
-  cursor: pointer;
-  border-radius: var(--radius-sm);
-  text-align: center;
-  transition: var(--transition-smooth);
-}
-
-.speed-option:hover {
-  background-color: var(--glass-bg);
-  color: var(--text-primary);
-}
-
-.speed-option.active {
-  background-color: var(--accent);
-  color: white;
-  font-weight: 600;
 }

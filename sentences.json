@@ -1,170 +1,362 @@
 [
   {
-    "id": "greet_01",
-    "category": "Greetings",
-    "french": "Bonjour ! Comment allez-vous ?",
-    "english": "Hello! How are you?",
-    "phonetic": "bohn-zhoor! koh-mahn tah-lay voo?"
+    "id": "hotel_01",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Guest",
+    "french": "Bonjour, j'ai une réservation au nom de Martin.",
+    "english": "Hello, I have a reservation under the name of Martin.",
+    "phonetic": "bohn-zhoor, zhay oon ray-zair-vah-syohn oh nohn duh mahr-tah"
   },
   {
-    "id": "greet_02",
-    "category": "Greetings",
-    "french": "Ça va bien, merci. Et toi ?",
-    "english": "I'm doing well, thank you. And you?",
-    "phonetic": "sah vah byah, mair-see. ay twah?"
+    "id": "hotel_02",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Receptionist",
+    "french": "Bonjour Monsieur Martin. Oui, j'ai votre réservation pour trois nuits.",
+    "english": "Hello Mr. Martin. Yes, I have your reservation for three nights.",
+    "phonetic": "bohn-zhoor muh-syuh mahr-tah. wee, zhay voh-truh ray-zair-vah-syohn poor trwah nwee"
   },
   {
-    "id": "greet_03",
-    "category": "Greetings",
-    "french": "Enchanté de vous rencontrer.",
-    "english": "Nice to meet you.",
-    "phonetic": "ahn-shahn-tay duh voo rahn-cohn-tray"
+    "id": "hotel_03",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Guest",
+    "french": "Parfait. Est-ce que le petit-déjeuner est inclus dans le prix ?",
+    "english": "Perfect. Is breakfast included in the price?",
+    "phonetic": "pahr-feh. es-kuh luh puh-tee day-zhuh-nay eh tahn-kloo dahn luh pree?"
   },
   {
-    "id": "greet_04",
-    "category": "Greetings",
-    "french": "S'il vous plaît.",
-    "english": "Please.",
-    "phonetic": "seel voo pleh"
+    "id": "hotel_04",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Receptionist",
+    "french": "Oui, tout à fait. Il est servi de sept heures à dix heures dans la salle à manger.",
+    "english": "Yes, absolutely. It is served from 7 to 10 AM in the dining room.",
+    "phonetic": "wee, too tah feh. eel eh sair-vee duh set urr ah deez urr dahn lah sahl ah mahn-zhay"
   },
   {
-    "id": "greet_05",
-    "category": "Greetings",
-    "french": "Merci beaucoup pour votre aide.",
-    "english": "Thank you very much for your help.",
-    "phonetic": "mair-see boh-coo poor voh-truh ehd"
+    "id": "hotel_05",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Guest",
+    "french": "Très bien. Quel est le mot de passe du réseau Wi-Fi, s'il vous plaît ?",
+    "english": "Very good. What is the password for the Wi-Fi network, please?",
+    "phonetic": "treh byah. kel eh luh moh duh pahs doo ray-zoh wee-fee, seel voo pleh?"
   },
   {
-    "id": "greet_06",
-    "category": "Greetings",
-    "french": "Au revoir, à bientôt !",
-    "english": "Goodbye, see you soon!",
-    "phonetic": "oh ruh-vwahr, ah byah-ntoh!"
+    "id": "hotel_06",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Receptionist",
+    "french": "C'est \"HotelElan2026\". Tout en majuscules.",
+    "english": "It's \"HotelElan2026\". All in capital letters.",
+    "phonetic": "say \"oh-tel-ay-lahn-deuh-meel-vahn-sees\". too tahn mah-zhoos-kool"
   },
   {
-    "id": "travel_01",
-    "category": "Travel & Directions",
-    "french": "Où se trouve la station de métro la plus proche ?",
-    "english": "Where is the nearest metro station?",
-    "phonetic": "oo suh troov lah stah-syohn duh may-troh lah ploo prohsh?"
+    "id": "hotel_07",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Guest",
+    "french": "Merci. La chambre est à quel étage ?",
+    "english": "Thank you. Which floor is the room on?",
+    "phonetic": "mair-see. lah shahm-bruh eh tah kel ay-tahzh?"
   },
   {
-    "id": "travel_02",
-    "category": "Travel & Directions",
-    "french": "Je cherche l'hôtel de ville.",
-    "english": "I am looking for the city hall.",
-    "phonetic": "zhuh shairsh loh-tel duh veel"
+    "id": "hotel_08",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Receptionist",
+    "french": "C'est la chambre trois cent deux, au troisième étage. Voici votre clé.",
+    "english": "It's room three hundred and two, on the third floor. Here is your key.",
+    "phonetic": "say lah shahm-bruh trwah sahn deuh, oh trwah-zyem ay-tahzh. vwah-see voh-truh klay"
   },
   {
-    "id": "travel_03",
-    "category": "Travel & Directions",
-    "french": "Pouvez-vous m'aider, s'il vous plaît ?",
-    "english": "Can you help me, please?",
-    "phonetic": "poo-vay voo meh-day, seel voo pleh"
+    "id": "hotel_09",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Guest",
+    "french": "Merci beaucoup. Y a-t-il un ascenseur dans l'hôtel ?",
+    "english": "Thank you very much. Is there an elevator in the hotel?",
+    "phonetic": "mair-see boh-coo. ee ah-teel ahn nah-sahn-surr dahn loh-tel?"
   },
   {
-    "id": "travel_04",
-    "category": "Travel & Directions",
-    "french": "Un billet pour Paris, s'il vous plaît.",
-    "english": "A ticket to Paris, please.",
-    "phonetic": "ahn bee-yeh poor pah-ree, seel voo pleh"
+    "id": "hotel_10",
+    "category": "At the Hotel",
+    "dialogue_id": "hotel_dialogue",
+    "speaker": "Receptionist",
+    "french": "Oui, il est juste là-bas, derrière la réception. Bon séjour !",
+    "english": "Yes, it is right over there, behind the reception desk. Have a nice stay!",
+    "phonetic": "wee, eel eh zhoost lah-bah, dair-yair lah ray-sep-syohn. bohn say-zhoor!"
   },
   {
-    "id": "travel_05",
-    "category": "Travel & Directions",
-    "french": "C'est à gauche ou à droite ?",
-    "english": "Is it on the left or on the right?",
-    "phonetic": "say tah gohsh oo ah drwaht?"
+    "id": "bus_01",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Passenger",
+    "french": "Bonjour, est-ce que ce bus va bien au centre-ville ?",
+    "english": "Hello, does this bus go to the city center?",
+    "phonetic": "bohn-zhoor, es-kuh suh boos vah byah oh sahntruh veel?"
   },
   {
-    "id": "food_01",
-    "category": "Food & Dining",
-    "french": "Je voudrais un croissant et un café, s'il vous plaît.",
-    "english": "I would like a croissant and a coffee, please.",
-    "phonetic": "zhuh voo-dreh ahn crwah-sahn ay ahn kah-fay, seel voo pleh"
+    "id": "bus_02",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Driver",
+    "french": "Bonjour. Oui, c'est le terminus de cette ligne. Montez !",
+    "english": "Hello. Yes, it's the final stop of this line. Step in!",
+    "phonetic": "bohn-zhoor. wee, say luh tair-mee-noos duh set leen-yuh. mohn-tay!"
   },
   {
-    "id": "food_02",
-    "category": "Food & Dining",
-    "french": "L'addition, s'il vous plaît.",
-    "english": "The bill, please.",
-    "phonetic": "lah-dee-syohn, seel voo pleh"
+    "id": "bus_03",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Passenger",
+    "french": "Merci. Combien coûte un ticket aller simple ?",
+    "english": "Thank you. How much is a one-way ticket?",
+    "phonetic": "mair-see. cohn-byah coot ahn tee-kay ah-lay sahm-pluh?"
   },
   {
-    "id": "food_03",
-    "category": "Food & Dining",
-    "french": "Où est le restaurant ?",
-    "english": "Where is the restaurant?",
-    "phonetic": "oo eh luh res-toh-rahn?"
+    "id": "bus_04",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Driver",
+    "french": "C'est deux euros et cinquante centimes.",
+    "english": "It's two euros and fifty cents.",
+    "phonetic": "say deuz uh-roh ay san-kahnt sahn-teem"
   },
   {
-    "id": "food_04",
-    "category": "Food & Dining",
-    "french": "C'est délicieux !",
-    "english": "It's delicious!",
-    "phonetic": "say day-lee-syuh!"
+    "id": "bus_05",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Passenger",
+    "french": "Je voudrais un ticket, s'il vous plaît. Puis-je payer en espèces ?",
+    "english": "I would like one ticket, please. Can I pay in cash?",
+    "phonetic": "zhuh voo-dreh ahn tee-kay, seel voo pleh. pwee-zhuh peh-yay ahn nes-pes?"
   },
   {
-    "id": "food_05",
-    "category": "Food & Dining",
-    "french": "Avez-vous une table pour deux personnes ?",
-    "english": "Do you have a table for two people?",
-    "phonetic": "ah-vay voo oon tah-bluh poor duh pair-sohn?"
+    "id": "bus_06",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Driver",
+    "french": "Oui, mais s'il vous plaît, faites l'appoint si possible.",
+    "english": "Yes, but please give exact change if possible.",
+    "phonetic": "wee, meh seel voo pleh, feht lah-pwah see poh-see-bluh"
   },
   {
-    "id": "shop_01",
-    "category": "Shopping & Money",
-    "french": "Combien ça coûte ?",
-    "english": "How much does this cost?",
-    "phonetic": "cohn-byah sah coot?"
+    "id": "bus_07",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Passenger",
+    "french": "Voici trois euros. Gardez la monnaie.",
+    "english": "Here is three euros. Keep the change.",
+    "phonetic": "vwah-see trwahz uh-roh. gahr-day lah mohn-eh"
   },
   {
-    "id": "shop_02",
-    "category": "Shopping & Money",
-    "french": "C'est trop cher.",
-    "english": "It's too expensive.",
-    "phonetic": "say troh shair"
+    "id": "bus_08",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Driver",
+    "french": "Merci. Prenez votre ticket et installez-vous.",
+    "english": "Thank you. Take your ticket and take a seat.",
+    "phonetic": "mair-see. pruh-nay voh-truh tee-kay ay ahn-stah-lay voo"
   },
   {
-    "id": "shop_03",
-    "category": "Shopping & Money",
-    "french": "Puis-je payer par carte bancaire ?",
-    "english": "Can I pay by credit card?",
-    "phonetic": "pwee-zhuh peh-yay pahr cahrt bahn-kair?"
+    "id": "bus_09",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Passenger",
+    "french": "Où dois-je descendre pour aller au musée du Louvre ?",
+    "english": "Where should I get off to go to the Louvre Museum?",
+    "phonetic": "oo dwah-zhuh day-sahn-druh poor ah-lay oh moo-zay doo loov-ruh?"
   },
   {
-    "id": "shop_04",
-    "category": "Shopping & Money",
-    "french": "Où sont les magasins ?",
-    "english": "Where are the shops?",
-    "phonetic": "oo sohn lay mah-gah-zah?"
+    "id": "bus_10",
+    "category": "On the Bus",
+    "dialogue_id": "bus_dialogue",
+    "speaker": "Driver",
+    "french": "C'est le cinquième arrêt. Je vous préviendrai quand on y sera.",
+    "english": "It's the fifth stop. I will let you know when we get there.",
+    "phonetic": "say luh san-kyem ah-reh. zhuh voo pray-vyahnd-ray kahnd ohn nee suh-rah"
   },
   {
-    "id": "help_01",
-    "category": "Emergencies & Help",
-    "french": "Aidez-moi, s'il vous plaît !",
-    "english": "Help me, please!",
-    "phonetic": "eh-day mwah, seel voo pleh!"
+    "id": "restaurant_01",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Customer",
+    "french": "Bonjour, nous voudrions une table pour deux personnes, s'il vous plaît.",
+    "english": "Hello, we would like a table for two people, please.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn oon tah-bluh poor duh pair-sohn, seel voo pleh"
   },
   {
-    "id": "help_02",
-    "category": "Emergencies & Help",
-    "french": "Où sont les toilettes ?",
-    "english": "Where are the toilets?",
-    "phonetic": "oo sohn lay twah-let?"
+    "id": "restaurant_02",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Waiter",
+    "french": "Bonjour ! Bien sûr, suivez-moi. Voici la carte.",
+    "english": "Hello! Of course, follow me. Here is the menu.",
+    "phonetic": "bohn-zhoor! byah soor, swee-vay mwah. vwah-see lah cahrt"
   },
   {
-    "id": "help_03",
-    "category": "Emergencies & Help",
-    "french": "Je ne comprends pas.",
-    "english": "I don't understand.",
-    "phonetic": "zhuh nuh cohn-prahn pah"
+    "id": "restaurant_03",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Customer",
+    "french": "Merci. Qu'est-ce que vous nous conseillez aujourd'hui ?",
+    "english": "Thank you. What do you recommend to us today?",
+    "phonetic": "mair-see. kes-kuh voo noo cohn-say-yay oh-zhoor-dwee?"
   },
   {
-    "id": "help_04",
-    "category": "Emergencies & Help",
-    "french": "Pouvez-vous répéter plus lentement ?",
-    "english": "Can you repeat more slowly?",
-    "phonetic": "poo-vay voo ray-pay-tay ploo lahnt-mahn?"
+    "id": "restaurant_04",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Waiter",
+    "french": "Notre spécialité du jour est le coq au vin. C'est excellent.",
+    "english": "Our specialty of the day is the coq au vin. It's excellent.",
+    "phonetic": "noh-truh spay-syah-lee-tay doo zhoor eh luh cock oh vahn. say tek-seh-lahn"
+  },
+  {
+    "id": "restaurant_05",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Customer",
+    "french": "Parfait. Je vais prendre le coq au vin, s'il vous plaît.",
+    "english": "Perfect. I will have the coq au vin, please.",
+    "phonetic": "pahr-feh. zhuh vay prahn-druh luh cock oh vahn, seel voo pleh"
+  },
+  {
+    "id": "restaurant_06",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Waiter",
+    "french": "Très bon choix. Et comme boisson, que désirez-vous ?",
+    "english": "Very good choice. And as a drink, what would you like?",
+    "phonetic": "treh bohn chwah. ay cohm bwah-sohn, kuh day-zee-ray voo?"
+  },
+  {
+    "id": "restaurant_07",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Customer",
+    "french": "Une carafe d'eau et deux verres de vin rouge, s'il vous plaît.",
+    "english": "A jug of tap water and two glasses of red wine, please.",
+    "phonetic": "oon cah-rahf doh ay duh vair duh vahn roozh, seel voo pleh"
+  },
+  {
+    "id": "restaurant_08",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Waiter",
+    "french": "Tout de suite. Bon appétit !",
+    "english": "Right away. Enjoy your meal!",
+    "phonetic": "too duh sweet. bohn ah-pay-tee!"
+  },
+  {
+    "id": "restaurant_09",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Customer",
+    "french": "Merci. S'il vous plaît, l'addition.",
+    "english": "Thank you. Excuse me, the bill.",
+    "phonetic": "mair-see. seel voo pleh, lah-dee-syohn"
+  },
+  {
+    "id": "restaurant_10",
+    "category": "At the Restaurant",
+    "dialogue_id": "restaurant_dialogue",
+    "speaker": "Waiter",
+    "french": "Voilà. Le total fait quarante-cinq euros. Merci beaucoup.",
+    "english": "Here it is. The total is forty-five euros. Thank you very much.",
+    "phonetic": "vwah-lah. luh toh-tahl feh kah-rahnt-sank uh-roh. mair-see boh-coo"
+  },
+  {
+    "id": "supermarket_01",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Customer",
+    "french": "Excusez-moi, où se trouvent les bouteilles de lait ?",
+    "english": "Excuse me, where are the milk bottles located?",
+    "phonetic": "ex-coo-zay mwah, oo suh troov lay boo-tey duh leh?"
+  },
+  {
+    "id": "supermarket_02",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Cashier",
+    "french": "Bonjour. Elles sont dans le rayon frais, au fond à gauche.",
+    "english": "Hello. They are in the fresh section, at the back on the left.",
+    "phonetic": "bohn-zhoor. el sohn dahn luh rey-ohn freh, oh fohn ah gohsh"
+  },
+  {
+    "id": "supermarket_03",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Customer",
+    "french": "Merci beaucoup. Et les fruits et légumes sont où ?",
+    "english": "Thank you very much. And where are the fruits and vegetables?",
+    "phonetic": "mair-see boh-coo. ay lay fwee-zay lay-goom sohn oo?"
+  },
+  {
+    "id": "supermarket_04",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Cashier",
+    "french": "Ils sont juste à l'entrée du magasin, à droite.",
+    "english": "They are right at the entrance of the store, on the right.",
+    "phonetic": "eel sohn zhoost ah lahnt-ray doo mah-gah-zah, ah drwaht"
+  },
+  {
+    "id": "supermarket_05",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Customer",
+    "french": "Super. Je passe maintenant à la caisse pour régler.",
+    "english": "Great. I am going to the checkout now to pay.",
+    "phonetic": "soo-pair. zhuh pahs mahnt-nahn ah lah kes poor ray-glay"
+  },
+  {
+    "id": "supermarket_06",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Cashier",
+    "french": "Bonjour. Avez-vous notre carte de fidélité du magasin ?",
+    "english": "Hello. Do you have our store loyalty card?",
+    "phonetic": "bohn-zhoor. ah-vay voo noh-truh cahrt duh fee-day-lee-tay doo mah-gah-zah?"
+  },
+  {
+    "id": "supermarket_07",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Customer",
+    "french": "Non, je ne l'ai pas. Je voudrais payer par carte bancaire.",
+    "english": "No, I don't have it. I would like to pay by credit card.",
+    "phonetic": "nohn, zhuh nuh lay pah. zhuh voo-dreh peh-yay pahr cahrt bahn-kair"
+  },
+  {
+    "id": "supermarket_08",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Cashier",
+    "french": "Très bien. Insérez votre carte et tapez votre code, s'il vous plaît.",
+    "english": "Very well. Insert your card and type your PIN, please.",
+    "phonetic": "treh byah. ahn-say-ray voh-truh cahrt ay tah-pay voh-truh cohd, seel voo pleh"
+  },
+  {
+    "id": "supermarket_09",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Customer",
+    "french": "Voilà, c'est fait. Est-ce que je peux avoir un sac ?",
+    "english": "There, it's done. Can I have a bag?",
+    "phonetic": "vwah-lah, say feh. es-kuh zhuh puh-z-ah-vwahr ahn sack?"
+  },
+  {
+    "id": "supermarket_10",
+    "category": "At the Supermarket",
+    "dialogue_id": "supermarket_dialogue",
+    "speaker": "Cashier",
+    "french": "Oui, voici le sac. Le total est de quinze euros. Bonne journée !",
+    "english": "Yes, here is the bag. The total is fifteen euros. Have a good day!",
+    "phonetic": "wee, vwah-see luh sack. luh toh-tahl eh duh kahzn uh-roh. bohn zhoor-nay!"
   }
 ]

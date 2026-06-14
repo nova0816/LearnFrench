@@ -34,24 +34,33 @@ def generate_audio():
             print(f"Skipping entry {index}: missing id or french text.")
             continue
             
-        file_path = os.path.join(audio_dir, f"{sentence_id}.mp3")
-        
-        # Check if file already exists so we don't redownload unnecessarily
-        if os.path.exists(file_path):
-            print(f"[{index + 1}/{len(sentences)}] Audio for '{sentence_id}' already exists. Skipping.")
-            continue
+        # 1. Normal speed audio file
+        normal_file = os.path.join(audio_dir, f"{sentence_id}.mp3")
+        if not os.path.exists(normal_file):
+            print(f"[{index + 1}/{len(sentences)}] Generating normal audio for '{sentence_id}'...")
+            try:
+                tts = gTTS(text=text, lang="fr", slow=False)
+                tts.save(normal_file)
+                time.sleep(0.5)
+            except Exception as e:
+                print(f"Error generating normal audio for {sentence_id}: {e}")
+        else:
+            print(f"[{index + 1}/{len(sentences)}] Normal audio for '{sentence_id}' already exists. Skipping.")
+
+        # 2. Slow speed audio file
+        slow_file = os.path.join(audio_dir, f"{sentence_id}_slow.mp3")
+        if not os.path.exists(slow_file):
+            print(f"[{index + 1}/{len(sentences)}] Generating slow audio for '{sentence_id}'...")
+            try:
+                tts_slow = gTTS(text=text, lang="fr", slow=True)
+                tts_slow.save(slow_file)
+                time.sleep(0.5)
+            except Exception as e:
+                print(f"Error generating slow audio for {sentence_id}: {e}")
+        else:
+            print(f"[{index + 1}/{len(sentences)}] Slow audio for '{sentence_id}' already exists. Skipping.")
             
-        print(f"[{index + 1}/{len(sentences)}] Generating audio for '{sentence_id}'...")
-        
-        try:
-            tts = gTTS(text=text, lang="fr", slow=False)
-            tts.save(file_path)
-            # Sleep briefly to be respectful to the API
-            time.sleep(0.5)
-        except Exception as e:
-            print(f"Error generating audio for {sentence_id}: {e}")
-            
-    print("Audio generation completed!")
+    print("All audio generation completed successfully!")
 
 if __name__ == "__main__":
     generate_audio()
