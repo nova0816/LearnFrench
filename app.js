@@ -501,6 +501,9 @@ function calculateSimilarity(s1, s2) {
 window.switchTab = function(tabName) {
   currentTab = tabName;
   
+  // Reset window scroll position to top on tab switch
+  window.scrollTo(0, 0);
+  
   // Update Navbar visual active states
   document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
   document.getElementById(`nav-${tabName}`).classList.add('active');
