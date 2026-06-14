@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Élan - Interactive French Learning PWA</title>
+  <meta name="description" content="A beautiful and interactive French language learning app. Tap to listen, speak to practice, and master French.">
+  
+  <!-- Theme Color for Mobile Browser Header -->
+  <meta name="theme-color" content="#0e0f14">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Manifest for PWA installation -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <!-- App Container -->
+  <div id="app" class="app-container">
+    
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="logo-area">
+        <div class="logo-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+        <div class="logo-text">
+          <h1>Élan</h1>
+          <span class="subtitle">Learn French, Beautifully</span>
+        </div>
+      </div>
+      
+      <!-- Quick Stats -->
+      <div class="header-stats">
+        <div class="stat-badge" title="Saved Sentences">
+          <i class="fa-solid fa-star text-star"></i>
+          <span id="star-count">0</span>
+        </div>
+        <div class="stat-badge" title="Mastered Sentences">
+          <i class="fa-solid fa-circle-check text-success"></i>
+          <span id="mastered-count">0</span>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Category Selector (Only shown on Explore tab) -->
+    <div id="category-bar-container" class="category-bar-wrapper">
+      <div class="category-bar" id="category-bar">
+        <!-- Dynamically populated categories -->
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-content">
+      
+      <!-- Explore View -->
+      <section id="view-explore" class="app-view active">
+        <div class="sentences-grid" id="sentences-grid">
+          <!-- Dynamically populated cards -->
+        </div>
+      </section>
+
+      <!-- Flashcards View -->
+      <section id="view-flashcards" class="app-view">
+        <div class="flashcard-container">
+          <div class="flashcard" id="flashcard">
+            <div class="card-inner">
+              
+              <!-- Card Front (French) -->
+              <div class="card-front">
+                <span class="card-badge" id="card-tag">Category</span>
+                <p class="french-text" id="card-french">Bonjour ! Comment ça va ?</p>
+                <p class="phonetic-text" id="card-phonetic">bohn-zhoor! koh-mahn sah vah?</p>
+                <div class="card-hint">
+                  <i class="fa-solid fa-rotate-left"></i> Tap to flip & reveal English
+                </div>
+              </div>
+              
+              <!-- Card Back (English) -->
+              <div class="card-back">
+                <span class="card-badge">Translation</span>
+                <p class="english-text" id="card-english">Hello! How is it going?</p>
+                <div class="card-hint">
+                  <i class="fa-solid fa-rotate-left"></i> Tap to flip back
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Flashcard Controls -->
+          <div class="flashcard-actions">
+            <button id="card-btn-listen" class="action-btn circle-btn main-action" title="Listen">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <button id="card-btn-practice" class="action-btn circle-btn mic-btn" title="Practice Speaking">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+          
+          <!-- Speech Feedback Toast inside Flashcard -->
+          <div id="flashcard-feedback" class="speech-feedback-card hidden">
+            <p id="flashcard-feedback-text">Listening...</p>
+          </div>
+
+          <!-- Quiz Progression Buttons -->
+          <div class="quiz-controls">
+            <button id="btn-need-practice" class="quiz-btn secondary-btn">
+              <i class="fa-solid fa-rotate-right"></i> Needs Practice
+            </button>
+            <button id="btn-got-it" class="quiz-btn primary-btn">
+              <i class="fa-solid fa-circle-check"></i> I Got It!
+            </button>
+          </div>
+          
+          <div class="quiz-progress-wrapper">
+            <div class="quiz-progress-bar">
+              <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 0%;"></div>
+            </div>
+            <span class="progress-text" id="quiz-progress-text">0 / 0 Completed</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorites View -->
+      <section id="view-favorites" class="app-view">
+        <div class="favorites-header">
+          <h2>My Starred Phrases</h2>
+          <p>Review and practice your saved expressions.</p>
+        </div>
+        <div class="sentences-grid" id="favorites-grid">
+          <!-- Starred cards populated here -->
+          <div class="empty-state" id="favorites-empty">
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <p>You haven't starred any phrases yet.</p>
+            <button onclick="switchTab('explore')" class="empty-action-btn">Explore Phrases</button>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+    <!-- Sticky Voice Control panel -->
+    <div id="speech-overlay" class="speech-overlay-panel hidden">
+      <div class="speech-panel-content">
+        <div class="close-overlay" id="close-speech-overlay"><i class="fa-solid fa-xmark"></i></div>
+        <h3>Speaking Practice</h3>
+        <p class="target-phrase" id="target-phrase-speech">Bonjour</p>
+        <div class="recording-visualizer">
+          <div class="mic-circle" id="mic-recording-btn">
+            <i class="fa-solid fa-microphone"></i>
+            <div class="pulse-ring"></div>
+          </div>
+          <span class="status-msg" id="speech-status">Tap microphone and speak in French</span>
+        </div>
+        <div class="user-transcription-box hidden" id="transcription-box">
+          <span class="label">You said:</span>
+          <p class="transcription-text" id="user-transcription">...</p>
+          <div class="match-score-pill" id="match-score">90% Match</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="app-navbar">
+      <button class="nav-item active" id="nav-explore" onclick="switchTab('explore')">
+        <i class="fa-solid fa-compass"></i>
+        <span>Explore</span>
+      </button>
+      <button class="nav-item" id="nav-flashcards" onclick="switchTab('flashcards')">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Flashcards</span>
+      </button>
+      <button class="nav-item" id="nav-favorites" onclick="switchTab('favorites')">
+        <i class="fa-solid fa-star"></i>
+        <span>Starred</span>
+      </button>
+    </nav>
+    
+    <!-- Audio Speed Controller Dialog / Panel -->
+    <div class="speed-controller-float">
+      <button class="speed-toggle-btn" id="speed-toggle" title="Playback Speed">
+        <i class="fa-solid fa-gauge-high"></i> <span id="speed-label">1.0x</span>
+      </button>
+      <div class="speed-dropdown hidden" id="speed-dropdown">
+        <div class="speed-option" data-speed="0.7">0.7x (Slow)</div>
+        <div class="speed-option active" data-speed="1.0">1.0x (Normal)</div>
+        <div class="speed-option" data-speed="1.2">1.2x (Fast)</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

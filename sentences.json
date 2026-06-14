@@ -1,0 +1,170 @@
+[
+  {
+    "id": "greet_01",
+    "category": "Greetings",
+    "french": "Bonjour ! Comment allez-vous ?",
+    "english": "Hello! How are you?",
+    "phonetic": "bohn-zhoor! koh-mahn tah-lay voo?"
+  },
+  {
+    "id": "greet_02",
+    "category": "Greetings",
+    "french": "Ça va bien, merci. Et toi ?",
+    "english": "I'm doing well, thank you. And you?",
+    "phonetic": "sah vah byah, mair-see. ay twah?"
+  },
+  {
+    "id": "greet_03",
+    "category": "Greetings",
+    "french": "Enchanté de vous rencontrer.",
+    "english": "Nice to meet you.",
+    "phonetic": "ahn-shahn-tay duh voo rahn-cohn-tray"
+  },
+  {
+    "id": "greet_04",
+    "category": "Greetings",
+    "french": "S'il vous plaît.",
+    "english": "Please.",
+    "phonetic": "seel voo pleh"
+  },
+  {
+    "id": "greet_05",
+    "category": "Greetings",
+    "french": "Merci beaucoup pour votre aide.",
+    "english": "Thank you very much for your help.",
+    "phonetic": "mair-see boh-coo poor voh-truh ehd"
+  },
+  {
+    "id": "greet_06",
+    "category": "Greetings",
+    "french": "Au revoir, à bientôt !",
+    "english": "Goodbye, see you soon!",
+    "phonetic": "oh ruh-vwahr, ah byah-ntoh!"
+  },
+  {
+    "id": "travel_01",
+    "category": "Travel & Directions",
+    "french": "Où se trouve la station de métro la plus proche ?",
+    "english": "Where is the nearest metro station?",
+    "phonetic": "oo suh troov lah stah-syohn duh may-troh lah ploo prohsh?"
+  },
+  {
+    "id": "travel_02",
+    "category": "Travel & Directions",
+    "french": "Je cherche l'hôtel de ville.",
+    "english": "I am looking for the city hall.",
+    "phonetic": "zhuh shairsh loh-tel duh veel"
+  },
+  {
+    "id": "travel_03",
+    "category": "Travel & Directions",
+    "french": "Pouvez-vous m'aider, s'il vous plaît ?",
+    "english": "Can you help me, please?",
+    "phonetic": "poo-vay voo meh-day, seel voo pleh"
+  },
+  {
+    "id": "travel_04",
+    "category": "Travel & Directions",
+    "french": "Un billet pour Paris, s'il vous plaît.",
+    "english": "A ticket to Paris, please.",
+    "phonetic": "ahn bee-yeh poor pah-ree, seel voo pleh"
+  },
+  {
+    "id": "travel_05",
+    "category": "Travel & Directions",
+    "french": "C'est à gauche ou à droite ?",
+    "english": "Is it on the left or on the right?",
+    "phonetic": "say tah gohsh oo ah drwaht?"
+  },
+  {
+    "id": "food_01",
+    "category": "Food & Dining",
+    "french": "Je voudrais un croissant et un café, s'il vous plaît.",
+    "english": "I would like a croissant and a coffee, please.",
+    "phonetic": "zhuh voo-dreh ahn crwah-sahn ay ahn kah-fay, seel voo pleh"
+  },
+  {
+    "id": "food_02",
+    "category": "Food & Dining",
+    "french": "L'addition, s'il vous plaît.",
+    "english": "The bill, please.",
+    "phonetic": "lah-dee-syohn, seel voo pleh"
+  },
+  {
+    "id": "food_03",
+    "category": "Food & Dining",
+    "french": "Où est le restaurant ?",
+    "english": "Where is the restaurant?",
+    "phonetic": "oo eh luh res-toh-rahn?"
+  },
+  {
+    "id": "food_04",
+    "category": "Food & Dining",
+    "french": "C'est délicieux !",
+    "english": "It's delicious!",
+    "phonetic": "say day-lee-syuh!"
+  },
+  {
+    "id": "food_05",
+    "category": "Food & Dining",
+    "french": "Avez-vous une table pour deux personnes ?",
+    "english": "Do you have a table for two people?",
+    "phonetic": "ah-vay voo oon tah-bluh poor duh pair-sohn?"
+  },
+  {
+    "id": "shop_01",
+    "category": "Shopping & Money",
+    "french": "Combien ça coûte ?",
+    "english": "How much does this cost?",
+    "phonetic": "cohn-byah sah coot?"
+  },
+  {
+    "id": "shop_02",
+    "category": "Shopping & Money",
+    "french": "C'est trop cher.",
+    "english": "It's too expensive.",
+    "phonetic": "say troh shair"
+  },
+  {
+    "id": "shop_03",
+    "category": "Shopping & Money",
+    "french": "Puis-je payer par carte bancaire ?",
+    "english": "Can I pay by credit card?",
+    "phonetic": "pwee-zhuh peh-yay pahr cahrt bahn-kair?"
+  },
+  {
+    "id": "shop_04",
+    "category": "Shopping & Money",
+    "french": "Où sont les magasins ?",
+    "english": "Where are the shops?",
+    "phonetic": "oo sohn lay mah-gah-zah?"
+  },
+  {
+    "id": "help_01",
+    "category": "Emergencies & Help",
+    "french": "Aidez-moi, s'il vous plaît !",
+    "english": "Help me, please!",
+    "phonetic": "eh-day mwah, seel voo pleh!"
+  },
+  {
+    "id": "help_02",
+    "category": "Emergencies & Help",
+    "french": "Où sont les toilettes ?",
+    "english": "Where are the toilets?",
+    "phonetic": "oo sohn lay twah-let?"
+  },
+  {
+    "id": "help_03",
+    "category": "Emergencies & Help",
+    "french": "Je ne comprends pas.",
+    "english": "I don't understand.",
+    "phonetic": "zhuh nuh cohn-prahn pah"
+  },
+  {
+    "id": "help_04",
+    "category": "Emergencies & Help",
+    "french": "Pouvez-vous répéter plus lentement ?",
+    "english": "Can you repeat more slowly?",
+    "phonetic": "poo-vay voo ray-pay-tay ploo lahnt-mahn?"
+  }
+]

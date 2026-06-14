@@ -1,0 +1,22 @@
+{
+  "name": "Élan French",
+  "short_name": "Élan",
+  "description": "Learn French, Beautifully. Practice speaking, listening, and active recall offline.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0e0f14",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "elan-french-learning-app",
+  "version": "1.0.0",
+  "description": "Interactive French Learning PWA",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -c-1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
