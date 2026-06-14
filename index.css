@@ -230,11 +230,14 @@ body {
 .app-view {
   display: none;
   animation: fadeIn 0.4s ease-out;
-  height: 100%;
 }
 
 .app-view.active {
   display: block;
+}
+
+#view-flashcards {
+  height: 100%;
 }
 
 @keyframes fadeIn {
