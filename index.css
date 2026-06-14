@@ -58,6 +58,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #030304; /* Very dark backdrop to outline app */
@@ -65,17 +73,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-  overflow: hidden;
 }
 
 /* LOCK DEVICE VIEWPORT (For desktop web review, simulates mobile) */
 .app-container {
   width: 100%;
   max-width: var(--max-width);
-  height: 100vh;
-  height: -webkit-fill-available;
+  height: 100%;
   background-color: var(--bg-primary);
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.8);
   display: flex;
@@ -213,6 +217,7 @@ body {
   flex: 1;
   overflow-y: auto;
   min-height: 0;
+  height: 0;
   -webkit-overflow-scrolling: touch;
   padding: 0 20px 20px 20px;
   position: relative;
