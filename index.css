@@ -212,6 +212,8 @@ body {
 .main-content {
   flex: 1;
   overflow-y: auto;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
   padding: 0 20px 20px 20px;
   position: relative;
   scrollbar-width: thin;
