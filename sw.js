@@ -1,8 +1,8 @@
-const CACHE_NAME = 'elan-french-cache-v6';
+const CACHE_NAME = 'elan-french-cache-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './index.css',
+  './index.css?v=6',
   './app.js',
   './sentences.json',
   './manifest.json',
