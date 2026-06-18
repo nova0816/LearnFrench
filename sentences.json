@@ -358,5 +358,1175 @@
     "french": "Oui, voici le sac. Le total est de quinze euros. Bonne journée !",
     "english": "Yes, here is the bag. The total is fifteen euros. Have a good day!",
     "phonetic": "wee, vwah-see luh sack. luh toh-tahl eh duh kahzn uh-roh. bohn zhoor-nay!"
+  },
+  {
+    "id": "hotel2_01",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Guest",
+    "french": "Bonjour, nous sommes quatre adultes et un enfant. Nous avons réservé deux chambres.",
+    "english": "Hello, we are four adults and one child. We booked two rooms.",
+    "phonetic": "bohn-zhoor, noo sohm kahtruh ah-doolt ay ahn nahn-fahn. noo-z-ah-vohn ray-zair-vay deuh shahm-bruh"
+  },
+  {
+    "id": "hotel2_02",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Receptionist",
+    "french": "Bonjour. Oui, j'ai une réservation pour deux chambres doubles communicantes.",
+    "english": "Hello. Yes, I have a reservation for two interconnecting double rooms.",
+    "phonetic": "bohn-zhoor. wee, zhay oon ray-zair-vah-syohn poor deuh shahm-bruh doo-bluh coh-moo-nee-kahnt"
+  },
+  {
+    "id": "hotel2_03",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Guest",
+    "french": "C'est parfait. Est-il possible d'ajouter un petit lit pour l'enfant dans notre chambre ?",
+    "english": "Perfect. Is it possible to add a small bed for the child in our room?",
+    "phonetic": "say pahr-feh. es-teel poh-see-bluh dah-zhoo-tay ahn puh-tee lee poor lahn-fahn dahn noh-truh shahm-bruh?"
+  },
+  {
+    "id": "hotel2_04",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Receptionist",
+    "french": "Oui, bien sûr. Nous pouvons installer un lit pliant sans frais supplémentaires.",
+    "english": "Yes, of course. We can set up a folding bed at no extra charge.",
+    "phonetic": "wee, byah soor. noo poo-vohn zahn-stah-lay ahn lee plee-ahn sahn freh soo-play-mahn-tair"
+  },
+  {
+    "id": "hotel2_05",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Guest",
+    "french": "Merci. Les chambres ont-elles une vue sur le jardin ?",
+    "english": "Thank you. Do the rooms have a garden view?",
+    "phonetic": "mair-see. lay shahm-bruh ohn-tel oon voo soor luh zhahr-dahn?"
+  },
+  {
+    "id": "hotel2_06",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Receptionist",
+    "french": "Oui, les deux chambres donnent sur le jardin intérieur. C'est très calme.",
+    "english": "Yes, both rooms look onto the inner garden. It is very quiet.",
+    "phonetic": "wee, lay deuh shahm-bruh dohn soor luh zhahr-dahn ahn-tay-ryurr. say treh cahl-muh"
+  },
+  {
+    "id": "hotel2_07",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Guest",
+    "french": "Très bien. Les petits-déjeuners sont-ils inclus pour tout le monde, y compris l'enfant ?",
+    "english": "Very good. Are breakfasts included for everyone, including the child?",
+    "phonetic": "treh byah. lay puh-tee day-zhuh-nay sohn-teel ahn-kloo poor too luh mohnd, ee cohn-pree lahn-fahn?"
+  },
+  {
+    "id": "hotel2_08",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Receptionist",
+    "french": "Oui, le petit-déjeuner est inclus pour les adultes, et gratuit pour l'enfant.",
+    "english": "Yes, breakfast is included for the adults, and free for the child.",
+    "phonetic": "wee, luh puh-tee day-zhuh-nay eh tahn-kloo poor lay-z-ah-doolt, ay grah-twee poor lahn-fahn"
+  },
+  {
+    "id": "hotel2_09",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Guest",
+    "french": "Merveilleux. À quelle heure ferme la piscine de l'hôtel ?",
+    "english": "Wonderful. What time does the hotel pool close?",
+    "phonetic": "mair-vay-yuh. ah kel urr fair-muh lah pee-seen duh loh-tel?"
+  },
+  {
+    "id": "hotel2_10",
+    "category": "At the Hotel - 2",
+    "dialogue_id": "hotel2_dialogue",
+    "speaker": "Receptionist",
+    "french": "La piscine ferme à vingt-deux heures. L'enfant doit être accompagné.",
+    "english": "The pool closes at 10 PM. The child must be accompanied.",
+    "phonetic": "lah pee-seen fair-muh ah vahn-deuh-z urr. lahn-fahn dwah teh-truh ah-cohm-pahn-yay"
+  },
+  {
+    "id": "bus2_01",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Passenger",
+    "french": "Bonjour, nous sommes quatre adultes et un enfant de sept ans.",
+    "english": "Hello, we are four adults and one seven-year-old child.",
+    "phonetic": "bohn-zhoor, noo sohm kahtruh ah-doolt ay ahn nahn-fahn duh seht ahn"
+  },
+  {
+    "id": "bus2_02",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Driver",
+    "french": "Bonjour. Souhaitez-vous des tickets individuels ou un carnet ?",
+    "english": "Hello. Would you like individual tickets or a book of tickets?",
+    "phonetic": "bohn-zhoor. swoo-ay-tay voo day tee-kay ahn-dee-vee-doo-el oo ahn cahr-nay?"
+  },
+  {
+    "id": "bus2_03",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Passenger",
+    "french": "Y a-t-il un tarif réduit ou une réduction pour l'enfant ?",
+    "english": "Is there a reduced fare or a discount for the child?",
+    "phonetic": "ee ah-teel ahn tah-reef ray-dwee oo oon ray-dook-syohn poor lahn-fahn?"
+  },
+  {
+    "id": "bus2_04",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Driver",
+    "french": "Oui, le ticket est gratuit sous quatre ans, et à moitié prix jusqu'à dix ans.",
+    "english": "Yes, the ticket is free under four years, and half price up to ten years.",
+    "phonetic": "wee, luh tee-kay eh grah-twee soo kahtruh ahn, ay ah mwah-tyay pree zhoos-kah deez ahn"
+  },
+  {
+    "id": "bus2_05",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Passenger",
+    "french": "D'accord, nous allons prendre quatre tickets adultes et un ticket tarif réduit.",
+    "english": "Okay, we will take four adult tickets and one reduced-fare ticket.",
+    "phonetic": "dah-cohr, noo-z-ah-lohn prahn-druh kahtruh tee-kay ah-doolt ay ahn tee-kay tah-reef ray-dwee"
+  },
+  {
+    "id": "bus2_06",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Driver",
+    "french": "Très bien. Le total fait onze euros et vingt-cinq centimes.",
+    "english": "Very well. The total is eleven euros and twenty-five cents.",
+    "phonetic": "treh byah. luh toh-tahl feh ohnz uh-roh ay vahn-sank sahn-teem"
+  },
+  {
+    "id": "bus2_07",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Passenger",
+    "french": "Puis-je payer avec ma carte bancaire sans contact ?",
+    "english": "Can I pay with my contactless credit card?",
+    "phonetic": "pwee-zhuh peh-yay ah-vek mah cahrt bahn-kair sahn cohn-tahct?"
+  },
+  {
+    "id": "bus2_08",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Driver",
+    "french": "Oui, posez la carte sur le lecteur noir juste ici.",
+    "english": "Yes, place the card on the black reader right here.",
+    "phonetic": "wee, poh-zay lah cahrt soor luh lec-turr nwahr zhoost ee-see"
+  },
+  {
+    "id": "bus2_09",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Passenger",
+    "french": "C'est fait. Est-ce que ce bus s'arrête près du musée d'Orsay ?",
+    "english": "Done. Does this bus stop near the Orsay Museum?",
+    "phonetic": "say feh. es-kuh suh boos sah-reht preh doo moo-zay dohr-say?"
+  },
+  {
+    "id": "bus2_10",
+    "category": "On the Bus - 2",
+    "dialogue_id": "bus2_dialogue",
+    "speaker": "Driver",
+    "french": "Oui, c'est dans trois stations. Je vous le signalerai.",
+    "english": "Yes, it's in three stops. I will point it out to you.",
+    "phonetic": "wee, say dahn trwah stah-syohn. zhuh voo luh seen-yah-luh-ray"
+  },
+  {
+    "id": "restaurant2_01",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Customer",
+    "french": "Bonsoir, nous sommes quatre adultes et un enfant. Avez-vous une table libre ?",
+    "english": "Good evening, we are four adults and one child. Do you have a free table?",
+    "phonetic": "bohn-swahr, noo sohm kahtruh ah-doolt ay ahn nahn-fahn. ah-vay voo oon tah-bluh lee-bruh?"
+  },
+  {
+    "id": "restaurant2_02",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Waiter",
+    "french": "Bonsoir. Oui, j'ai une grande table pour cinq personnes près de la fenêtre.",
+    "english": "Good evening. Yes, I have a large table for five people near the window.",
+    "phonetic": "bohn-swahr. wee, zhay oon grahnd tah-bluh poor sank pair-sohn preh de lah fuh-neh-truh"
+  },
+  {
+    "id": "restaurant2_03",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Customer",
+    "french": "Parfait. Pouvons-nous avoir un rehausseur de chaise pour l'enfant ?",
+    "english": "Perfect. Can we have a booster seat for the child?",
+    "phonetic": "pahr-feh. poo-vohn noo-z-ah-vwahr ahn ruh-oh-surr duh shehz poor lahn-fahn?"
+  },
+  {
+    "id": "restaurant2_04",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Waiter",
+    "french": "Bien sûr. Je vous apporte cela avec les cartes et le menu enfant.",
+    "english": "Of course. I will bring you that along with the menus and the child's menu.",
+    "phonetic": "byah soor. zhuh voo-z-ah-pohrt soh-lah ah-vek lay cahrt ay luh muh-nee nahn-fahn"
+  },
+  {
+    "id": "restaurant2_05",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Customer",
+    "french": "Merci. Quels plats proposez-vous dans le menu pour enfant ?",
+    "english": "Thank you. What dishes do you offer on the child's menu?",
+    "phonetic": "mair-see. kel plah proh-poh-zay voo dahn luh muh-nee poor ahn-fahn?"
+  },
+  {
+    "id": "restaurant2_06",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Waiter",
+    "french": "Des nuggets de poulet maison ou un filet de poisson avec des frites.",
+    "english": "Homemade chicken nuggets or a fish fillet with French fries.",
+    "phonetic": "day nuh-gets duh poo-lay meh-zohn oo ahn fee-lay duh pwah-sohn ah-vek day freet"
+  },
+  {
+    "id": "restaurant2_07",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Customer",
+    "french": "D'accord, l'enfant prendra les nuggets. Et pour nous, quatre plats du jour.",
+    "english": "Okay, the child will have the nuggets. And for us, four daily specials.",
+    "phonetic": "dah-cohr, lahn-fahn prahn-drah lay nuh-gets. ay poor noo, kahtruh plah doo zhoor"
+  },
+  {
+    "id": "restaurant2_08",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Waiter",
+    "french": "Très bien. Et pour accompagner le repas, désirez-vous une bouteille de vin ?",
+    "english": "Very well. And to accompany the meal, would you like a bottle of wine?",
+    "phonetic": "treh byah. ay poor ah-cohm-pahn-yay luh ruh-pah, day-zee-ray voo oon boo-tey duh vahn?"
+  },
+  {
+    "id": "restaurant2_09",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Customer",
+    "french": "Oui, une bouteille de vin blanc de Loire et une grande bouteille d'eau pétillante.",
+    "english": "Yes, a bottle of Loire white wine and a large bottle of sparkling water.",
+    "phonetic": "wee, oon boo-tey duh vahn blahn duh lwahr ay oon grahnd boo-tey doh pay-tee-yant"
+  },
+  {
+    "id": "restaurant2_10",
+    "category": "At the Restaurant - 2",
+    "dialogue_id": "restaurant2_dialogue",
+    "speaker": "Waiter",
+    "french": "Parfait. Je lance les commandes tout de suite.",
+    "english": "Perfect. I will place the orders right away.",
+    "phonetic": "pahr-feh. zhuh lahns lay coh-mahnd too duh sweet"
+  },
+  {
+    "id": "train_01",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Passenger",
+    "french": "Bonjour, nous voudrions cinq billets de train pour Marne-la-Vallée, s'il vous plaît.",
+    "english": "Hello, we would like five train tickets to Marne-la-Vallée, please.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn sank bee-yeh duh trahn poor mahrn-lah-vah-lay, seel voo pleh"
+  },
+  {
+    "id": "train_02",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Ticket Agent",
+    "french": "Bonjour. C'est pour quatre adultes et un enfant ?",
+    "english": "Hello. Is it for four adults and one child?",
+    "phonetic": "bohn-zhoor. say poor kahtruh ah-doolt ay ahn nahn-fahn?"
+  },
+  {
+    "id": "train_03",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Passenger",
+    "french": "Oui, c'est exact. L'enfant a sept ans.",
+    "english": "Yes, that's correct. The child is seven years old.",
+    "phonetic": "wee, say tek-zahct. lahn-fahn ah seht ahn"
+  },
+  {
+    "id": "train_04",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Ticket Agent",
+    "french": "D'accord. Le billet enfant bénéficie d'une réduction de cinquante pour cent.",
+    "english": "Okay. The child ticket benefits from a fifty percent discount.",
+    "phonetic": "dah-cohr. luh bee-yeh nahn-fahn bay-nay-fee-see doon ray-dook-syohn duh sank-ahnt poor sahn"
+  },
+  {
+    "id": "train_05",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Passenger",
+    "french": "C'est une bonne nouvelle. Quel est le prix total des cinq billets ?",
+    "english": "That's good news. What is the total price for the five tickets?",
+    "phonetic": "say toon bohn noo-vel. kel eh luh pree toh-tahl day sank bee-yeh?"
+  },
+  {
+    "id": "train_06",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Ticket Agent",
+    "french": "Le total est de trente-six euros. Le train part du quai numéro quatre.",
+    "english": "The total is thirty-six euros. The train leaves from platform number four.",
+    "phonetic": "luh-toh-tahl eh duh trahnt-seez uh-roh. luh trahn pahr doo kay noo-may-roh kahtruh"
+  },
+  {
+    "id": "train_07",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Passenger",
+    "french": "Est-ce que c'est un train direct ou y a-t-il des correspondances ?",
+    "english": "Is it a direct train or are there transfers?",
+    "phonetic": "es-kuh say tahn trahn dee-rect oo ee ah-teel day coh-res-pohn-dahns?"
+  },
+  {
+    "id": "train_08",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Ticket Agent",
+    "french": "C'est le RER A, il est direct jusqu'à la station Disneyland.",
+    "english": "It's the RER A, it is direct to the Disneyland station.",
+    "phonetic": "say luh air-oh-air ah, eel eh dee-rect zhoos-kah lah stah-syohn deez-nee-lahnd"
+  },
+  {
+    "id": "train_09",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Passenger",
+    "french": "Parfait. Pouvons-nous composter les billets juste ici ?",
+    "english": "Perfect. Can we validate the tickets right here?",
+    "phonetic": "pahr-feh. poo-vohn noo cohm-pohs-tay lay bee-yeh zhoost ee-see?"
+  },
+  {
+    "id": "train_10",
+    "category": "At the Train Station",
+    "dialogue_id": "train_dialogue",
+    "speaker": "Ticket Agent",
+    "french": "Oui, insérez-les dans les bornes jaunes avant de monter dans le train.",
+    "english": "Yes, insert them into the yellow gates before boarding the train.",
+    "phonetic": "wee, ahn-say-ray lay dahn lay bohrn zhohn ah-vahn duh mohn-tay dahn luh trahn"
+  },
+  {
+    "id": "car_01",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Customer",
+    "french": "Bonjour, nous voudrions louer un grand véhicule pour cinq personnes, s'il vous plaît.",
+    "english": "Hello, we would like to rent a large vehicle for five people, please.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn lwayer ahn grahn vay-ee-kool poor sank pair-sohn, seel voo pleh"
+  },
+  {
+    "id": "car_02",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Agent",
+    "french": "Bonjour. J'ai un grand SUV ou un monospace de disponible.",
+    "english": "Hello. I have a large SUV or a minivan available.",
+    "phonetic": "bohn-zhoor. zhay ahn grahn es-oo-vee oo ahn moh-noh-spahs duh dees-poh-nee-bluh"
+  },
+  {
+    "id": "car_03",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Customer",
+    "french": "Un monospace serait parfait. Nous avons beaucoup de valises.",
+    "english": "A minivan would be perfect. We have a lot of suitcases.",
+    "phonetic": "ahn moh-noh-spahs suh-ray pahr-feh. noo-z-ah-vohn boh-coo duh vah-leez"
+  },
+  {
+    "id": "car_04",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Agent",
+    "french": "D'accord. Pour combien de jours souhaitez-vous le louer ?",
+    "english": "Understood. For how many days would you like to rent it?",
+    "phonetic": "dah-cohr. poor cohn-byah duh zhoor swoo-ay-tay voo luh lwayer?"
+  },
+  {
+    "id": "car_05",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Customer",
+    "french": "Pour une semaine. Nous avons aussi besoin d'un siège auto pour l'enfant.",
+    "english": "For one week. We also need a child safety seat.",
+    "phonetic": "poor oon suh-mehn. noo-z-ah-vohnz oh-see buh-zwahn dahn syez oh-toh poor lahn-fahn"
+  },
+  {
+    "id": "car_06",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Agent",
+    "french": "Pas de problème, nous louons des sièges auto adaptés à tous les âges.",
+    "english": "No problem, we rent safety seats suitable for all ages.",
+    "phonetic": "pah duh proh-blehm, noo lwohnd day syez oh-toh ah-dahp-tay ah too lay-z-ahzh"
+  },
+  {
+    "id": "car_07",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Customer",
+    "french": "Merveilleux. Le deuxième conducteur est-il gratuit ?",
+    "english": "Wonderful. Is the second driver free?",
+    "phonetic": "mair-vay-yuh. luh deuh-zyem cohn-dook-turr es-teel grah-twee?"
+  },
+  {
+    "id": "car_08",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Agent",
+    "french": "Oui, c'est inclus dans notre forfait familial. J'ai besoin de vos permis de conduire.",
+    "english": "Yes, it is included in our family package. I need your driver's licenses.",
+    "phonetic": "wee, say tahn-kloo dahn noh-truh fohr-feh fah-mee-lyahl. zhay buh-zwahn duh voh pair-mee duh cohn-dweer"
+  },
+  {
+    "id": "car_09",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Customer",
+    "french": "Les voici, avec ma carte de crédit pour la caution.",
+    "english": "Here they are, along with my credit card for the deposit.",
+    "phonetic": "lay vwah-see, ah-vek mah cahrt duh cray-dee poor lah coh-syohn"
+  },
+  {
+    "id": "car_10",
+    "category": "Renting a Car",
+    "dialogue_id": "car_dialogue",
+    "speaker": "Agent",
+    "french": "Merci. Le véhicule est garé sur la place numéro dix du parking.",
+    "english": "Thank you. The vehicle is parked in spot number ten of the parking lot.",
+    "phonetic": "mair-see. luh vay-ee-kool eh gah-ray sour lah plahs noo-may-roh deez doo pahr-keeng"
+  },
+  {
+    "id": "pharmacy_01",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Customer",
+    "french": "Bonjour, j'ai besoin d'un sirop pour la toux pour mon enfant, s'il vous plaît.",
+    "english": "Hello, I need a cough syrup for my child, please.",
+    "phonetic": "bohn-zhoor, zhay buh-zwahn dahn see-roh poor lah too poor mohn nahn-fahn, seel voo pleh"
+  },
+  {
+    "id": "pharmacy_02",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Pharmacist",
+    "french": "Bonjour. Quel âge a votre enfant et depuis quand tousse-t-il ?",
+    "english": "Hello. How old is your child and how long has he been coughing?",
+    "phonetic": "bohn-zhoor. kel ahzh ah voh-truh nahn-fahn ay duh-pwee kahnd toos-teel?"
+  },
+  {
+    "id": "pharmacy_03",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Customer",
+    "french": "Il a sept ans et il tousse depuis hier soir.",
+    "english": "He is seven years old and has been coughing since yesterday evening.",
+    "phonetic": "eel ah seht ahn ay eel toos duh-pwee yair swahr"
+  },
+  {
+    "id": "pharmacy_04",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Pharmacist",
+    "french": "Est-ce qu'il a de la fièvre ou d'autres symptômes ?",
+    "english": "Does he have a fever or other symptoms?",
+    "phonetic": "es-keel ah duh lah fyev-ruh oo doh-truh sahmp-tohm?"
+  },
+  {
+    "id": "pharmacy_05",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Customer",
+    "french": "Non, pas de fièvre, mais il a un peu mal à la gorge.",
+    "english": "No, no fever, but he has a bit of a sore throat.",
+    "phonetic": "nohn, pah duh fyev-ruh, meh eel ah ahn peh mahl ah lah gohrzh"
+  },
+  {
+    "id": "pharmacy_06",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Pharmacist",
+    "french": "D'accord. Voici un sirop adapté pour les enfants de son âge.",
+    "english": "Okay. Here is a syrup suitable for children of his age.",
+    "phonetic": "dah-cohr. vwah-see ahn see-roh ah-dahp-tay poor lay-z-ahn-fahn duh sohn ahzh"
+  },
+  {
+    "id": "pharmacy_07",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Customer",
+    "french": "Quelle est la posologie et combien de fois par jour doit-il le prendre ?",
+    "english": "What is the dosage and how many times a day should he take it?",
+    "phonetic": "kel eh lah poh-zoh-loh-zhee ay cohn-byah duh fwah pahr zhoor dwah-teel luh prahn-druh?"
+  },
+  {
+    "id": "pharmacy_08",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Pharmacist",
+    "french": "C'est une cuillère à café, matin et soir, pendant trois jours.",
+    "english": "It's one teaspoon, morning and evening, for three days.",
+    "phonetic": "say toon cwee-yair ah cah-fay, mah-tahn ay swahr, pahnd-ahn trwah zhoor"
+  },
+  {
+    "id": "pharmacy_09",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Customer",
+    "french": "D'accord. Dois-je lui donner pendant le repas ou après ?",
+    "english": "Okay. Should I give it to him during the meal or after?",
+    "phonetic": "dah-cohr. dwah-zhuh lwee doh-nay pahnd-ahn luh ruh-pah oo ah-preh?"
+  },
+  {
+    "id": "pharmacy_10",
+    "category": "At the Pharmacy",
+    "dialogue_id": "pharmacy_dialogue",
+    "speaker": "Pharmacist",
+    "french": "C'est préférable de le prendre après le repas. Évitez les boissons froides.",
+    "english": "It is preferable to take it after meals. Avoid cold drinks.",
+    "phonetic": "say pray-fay-rah-bluh duh luh prahn-druh ah-preh luh ruh-pah. ay-vee-tay lay bwah-sohn frwahd"
+  },
+  {
+    "id": "museum_01",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Visitor",
+    "french": "Bonjour, nous voudrions des billets d'entrée pour quatre adultes et un enfant.",
+    "english": "Hello, we would like entry tickets for four adults and one child.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn day bee-yeh dahnt-ray poor kahtruh ah-doolt ay ahn nahn-fahn"
+  },
+  {
+    "id": "museum_02",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Cashier",
+    "french": "Bonjour. L'entrée est gratuite pour l'enfant de moins de dix-huit ans.",
+    "english": "Hello. Entry is free for children under eighteen years old.",
+    "phonetic": "bohn-zhoor. lahnt-ray eh grah-twee-teh poor lahn-fahn duh mwah duh deez-weet ahn"
+  },
+  {
+    "id": "museum_03",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Visitor",
+    "french": "C'est parfait. Existe-t-il un tarif de groupe pour les quatre adultes ?",
+    "english": "Perfect. Is there a group rate for the four adults?",
+    "phonetic": "say pahr-feh. eg-zees-teel ahn tah-reef duh groop poor lay kahtruh ah-doolt?"
+  },
+  {
+    "id": "museum_04",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Cashier",
+    "french": "Le tarif groupe s'applique à partir de dix personnes.",
+    "english": "The group rate applies starting from ten people.",
+    "phonetic": "luh tah-reef groop sah-pleek ah pahr-teer duh deez pair-sohn"
+  },
+  {
+    "id": "museum_05",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Visitor",
+    "french": "D'accord. Quel est le prix d'un billet adulte individuel alors ?",
+    "english": "Okay. What is the price of an individual adult ticket then?",
+    "phonetic": "dah-cohr. kel eh luh pree dahn bee-yeh ah-doolt ahn-dee-vee-doo-el ah-lohr?"
+  },
+  {
+    "id": "museum_06",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Cashier",
+    "french": "C'est quinze euros par adulte. Le total pour vous est de soixante euros.",
+    "english": "It's fifteen euros per adult. The total for you is sixty euros.",
+    "phonetic": "say canz uh-roh pahr ah-doolt. luh-toh-tahl poor voo eh duh swah-sahnt uh-roh"
+  },
+  {
+    "id": "museum_07",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Visitor",
+    "french": "Est-ce que le musée est accessible avec une poussette pour enfant ?",
+    "english": "Is the museum accessible with a child stroller?",
+    "phonetic": "es-kuh luh moo-zay eh tahk-seh-see-bluh ah-vek oon poo-set poor ahn-fahn?"
+  },
+  {
+    "id": "museum_08",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Cashier",
+    "french": "Oui, tout à fait. Nous avons des ascenseurs et des rampes à chaque étage.",
+    "english": "Yes, absolutely. We have elevators and ramps on every floor.",
+    "phonetic": "wee, too tah feh. noo-z-ah-vohn day-z-ah-sahn-surr ay day rahmp ah shahk ay-tahzh"
+  },
+  {
+    "id": "museum_09",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Visitor",
+    "french": "Super. Pouvons-nous louer des audioguides en anglais et en français ?",
+    "english": "Great. Can we rent audio guides in English and French?",
+    "phonetic": "soo-pair. poo-vohn noo lwayer day-z-oh-dyoh-geed ahn nahng-leh ay ahn frahn-seh?"
+  },
+  {
+    "id": "museum_10",
+    "category": "At the Museum",
+    "dialogue_id": "museum_dialogue",
+    "speaker": "Cashier",
+    "french": "Oui, ils sont disponibles au comptoir juste après le contrôle des billets.",
+    "english": "Yes, they are available at the counter right after the ticket check.",
+    "phonetic": "wee, eel sohn dees-poh-nee-bluh oh cohmp-twahr zhoost ah-preh luh cohn-trohl day bee-yeh"
+  },
+  {
+    "id": "airport_01",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Traveler",
+    "french": "Bonjour, nous sommes quatre adultes et un enfant. Nous venons enregistrer nos bagages.",
+    "english": "Hello, we are four adults and one child. We are here to check in our luggage.",
+    "phonetic": "bohn-zhoor, noo sohm kahtruh ah-doolt ay ahn nahn-fahn. noo vuh-nohn ahn-ruh-zhees-tray noh bah-gahzh"
+  },
+  {
+    "id": "airport_02",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Agent",
+    "french": "Bonjour. S'il vous plaît, donnez-moi vos passeports et vos billets.",
+    "english": "Hello. Please give me your passports and your tickets.",
+    "phonetic": "seel voo pleh, doh-nay mwah voh pahs-pohr ay voh bee-yeh"
+  },
+  {
+    "id": "airport_03",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Traveler",
+    "french": "Les voici. Nous avons cinq grandes valises et une poussette pliante.",
+    "english": "Here they are. We have five large suitcases and a folding stroller.",
+    "phonetic": "lay vwah-see. noo-z-ah-vohn sank grahnd vah-leez ay oon poo-set plee-ahnt"
+  },
+  {
+    "id": "airport_04",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Agent",
+    "french": "D'accord. Veuillez poser la première valise sur la balance, s'il vous plaît.",
+    "english": "Okay. Please place the first suitcase on the scale, please.",
+    "phonetic": "dah-cohr. vehy-yay poh-zay lah pruh-myair vah-leez soor lah bah-lahns, seel voo pleh"
+  },
+  {
+    "id": "airport_05",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Traveler",
+    "french": "Pas de problème. Est-ce que la poussette compte comme un bagage en soute ?",
+    "english": "No problem. Does the stroller count as checked baggage?",
+    "phonetic": "pah duh proh-blehm. es-kuh lah poo-set cohnt cohm ahn bah-gahzh ahn soot?"
+  },
+  {
+    "id": "airport_06",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Agent",
+    "french": "Non, c'est gratuit. Vous pouvez la garder jusqu'à la porte d'embarquement.",
+    "english": "No, it's free. You can keep it until you reach the boarding gate.",
+    "phonetic": "nohn, say grah-twee. voo poo-vay lah gahr-day zhoos-kah lah pohrt dahm-bahr-kuh-mahn"
+  },
+  {
+    "id": "airport_07",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Traveler",
+    "french": "C'est parfait pour l'enfant. Quel est le poids maximum autorisé par valise ?",
+    "english": "That's perfect for the child. What is the maximum weight allowed per suitcase?",
+    "phonetic": "say pahr-feh poor lahn-fahn. kel eh luh pwah mak-see-mohm oh-toh-ree-zay pahr vah-leez?"
+  },
+  {
+    "id": "airport_08",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Agent",
+    "french": "C'est vingt-trois kilos par bagage. Vos valises sont toutes conformes.",
+    "english": "It is twenty-three kilos per bag. Your suitcases are all compliant.",
+    "phonetic": "say vahn-trwah kee-loh pahr bah-gahzh. voh vah-leez sohn toot cohn-fohrm"
+  },
+  {
+    "id": "airport_09",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Traveler",
+    "french": "Super. Où devons-nous passer pour le contrôle de sécurité ?",
+    "english": "Great. Where do we go for security screening?",
+    "phonetic": "soo-pair. oo duh-vohn noo pah-say poor luh cohn-trohl duh say-coo-ree-tay?"
+  },
+  {
+    "id": "airport_10",
+    "category": "At the Airport",
+    "dialogue_id": "airport_dialogue",
+    "speaker": "Agent",
+    "french": "Montez à l'étage par l'escalier mécanique. Bon vol à toute la famille !",
+    "english": "Go upstairs via the escalator. Have a good flight to the whole family!",
+    "phonetic": "mohn-tay ah lay-tahzh pahr les-cah-lyay may-cah-neek. bohn vol ah toot lah fah-mee-yuh!"
+  },
+  {
+    "id": "cafe_01",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Customer",
+    "french": "Bonjour, nous voudrions nous installer en terrasse, s'il vous plaît.",
+    "english": "Hello, we would like to sit on the terrace, please.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn noo-z-ahn-stah-lay ahn tay-rahs, seel voo pleh"
+  },
+  {
+    "id": "cafe_02",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Waiter",
+    "french": "Bonjour. Oui, j'ai une grande table de libre juste ici au soleil.",
+    "english": "Hello. Yes, I have a large free table right here in the sun.",
+    "phonetic": "bohn-zhoor. wee, zhay oon grahnd tah-bluh duh lee-bruh zhoost ee-see oh soh-ley"
+  },
+  {
+    "id": "cafe_03",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Customer",
+    "french": "C'est parfait. Nous voudrions commander des boissons et des viennoiseries.",
+    "english": "That's perfect. We would like to order drinks and pastries.",
+    "phonetic": "say pahr-feh. noo voo-dree-ohn coh-mahn-day day bwah-sohn ay day vyen-wahz-ree"
+  },
+  {
+    "id": "cafe_04",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Waiter",
+    "french": "Très bien. Qu'est-ce que je vous apporte ?",
+    "english": "Very well. What can I bring you?",
+    "phonetic": "treh byah. kes-kuh zhuh voo-z-ah-pohrt?"
+  },
+  {
+    "id": "cafe_05",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Customer",
+    "french": "Deux cafés crème, deux thés glacés et un chocolat chaud pour l'enfant.",
+    "english": "Two coffees with milk, two iced teas, and a hot chocolate for the child.",
+    "phonetic": "deuh cah-fay crehm, deuh tay glah-say ay ahn choo-coh-lah chod poor lahn-fahn"
+  },
+  {
+    "id": "cafe_06",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Waiter",
+    "french": "D'accord. Et pour accompagner les boissons ?",
+    "english": "Okay. And to go with the drinks?",
+    "phonetic": "dah-cohr. ay poor ah-cohm-pahn-yay lay bwah-sohn?"
+  },
+  {
+    "id": "cafe_07",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Customer",
+    "french": "Trois croissants et deux pains au chocolat, s'il vous plaît.",
+    "english": "Three croissants and two chocolate pastries, please.",
+    "phonetic": "trwah crwah-sahn ay deuh pahn oh choo-coh-lah, seel voo pleh"
+  },
+  {
+    "id": "cafe_08",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Waiter",
+    "french": "Parfait. Je vous apporte cela dans quelques minutes.",
+    "english": "Perfect. I will bring you that in a few minutes.",
+    "phonetic": "pahr-feh. zhuh voo-z-ah-pohrt soh-lah dahn kel-kuh mee-noot"
+  },
+  {
+    "id": "cafe_09",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Customer",
+    "french": "Est-ce que les croissants sont faits maison ?",
+    "english": "Are the croissants homemade?",
+    "phonetic": "es-kuh lay crwah-sahn sohn feh meh-zohn?"
+  },
+  {
+    "id": "cafe_10",
+    "category": "At a Cafe",
+    "dialogue_id": "cafe_dialogue",
+    "speaker": "Waiter",
+    "french": "Oui, ils sont cuits sur place ce matin. Bon appétit !",
+    "english": "Yes, they were baked on-site this morning. Enjoy!",
+    "phonetic": "wee, eel sohn cwee soor plahs suh mah-tahn. bohn ah-pay-tee!"
+  },
+  {
+    "id": "boat_01",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Tourist",
+    "french": "Bonjour, nous voudrions faire une promenade en bateau sur la Seine.",
+    "english": "Hello, we would like to take a boat cruise on the Seine.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn fair oon prohm-nahd ahn bah-toh soor lah sehn"
+  },
+  {
+    "id": "boat_02",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Ticket Seller",
+    "french": "Bonjour. Nous avons des départs toutes les trente minutes.",
+    "english": "Hello. We have departures every thirty minutes.",
+    "phonetic": "bohn-zhoor. noo-z-ah-vohn day day-pahr toot lay trahnt mee-noot"
+  },
+  {
+    "id": "boat_03",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Tourist",
+    "french": "C'est parfait. Nous sommes quatre adultes et un enfant. Quel est le prix ?",
+    "english": "That's perfect. We are four adults and one child. What is the price?",
+    "phonetic": "say pahr-feh. noo sohm kahtruh ah-doolt ay ahn nahn-fahn. kel eh luh pree?"
+  },
+  {
+    "id": "boat_04",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Ticket Seller",
+    "french": "Le billet adulte est de quinze euros et l'enfant de moins de douze ans paye huit euros.",
+    "english": "The adult ticket is fifteen euros and the child under twelve pays eight euros.",
+    "phonetic": "luh bee-yeh ah-doolt eh duh canz uh-roh ay lahn-fahn duh mwah duh dooz ahn pey weet uh-roh"
+  },
+  {
+    "id": "boat_05",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Tourist",
+    "french": "D'accord. Donc cela fait soixante-huit euros au total.",
+    "english": "Okay. So that makes sixty-eight euros in total.",
+    "phonetic": "dah-cohr. dohnk soh-lah feh swah-sahnt-weet uh-roh oh-toh-tahl"
+  },
+  {
+    "id": "boat_06",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Ticket Seller",
+    "french": "Oui, c'est exact. La promenade dure environ une heure.",
+    "english": "Yes, that's correct. The cruise lasts about one hour.",
+    "phonetic": "wee, say tek-zahct. lah prohm-nahd door ahn-vee-rohn oon urr"
+  },
+  {
+    "id": "boat_07",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Tourist",
+    "french": "Y a-t-il des gilets de sauvetage adaptés pour les enfants à bord ?",
+    "english": "Are there life jackets suitable for children on board?",
+    "phonetic": "ee ah-teel day zhee-lay duh sohv-tahzh ah-dahp-tay poor lay-z-ahn-fahn ah bohr?"
+  },
+  {
+    "id": "boat_08",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Ticket Seller",
+    "french": "Oui, la sécurité est notre priorité. Ils sont sous chaque siège.",
+    "english": "Yes, safety is our priority. They are under each seat.",
+    "phonetic": "wee, lah say-coo-ree-tay eh noh-truh pree-oh-ree-tay. eel sohn soo shahk syez"
+  },
+  {
+    "id": "boat_09",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Tourist",
+    "french": "Très bien. D'où part le bateau exactement ?",
+    "english": "Very good. Where does the boat depart from exactly?",
+    "phonetic": "treh byah. doo pahr luh bah-toh eg-zahct-mahn?"
+  },
+  {
+    "id": "boat_10",
+    "category": "Seine Boat Cruise",
+    "dialogue_id": "boat_dialogue",
+    "speaker": "Ticket Seller",
+    "french": "L'embarquement se fait au pont de l'Alma, juste en bas des escaliers.",
+    "english": "Boarding is at the Alma bridge, right at the bottom of the stairs.",
+    "phonetic": "lahms-bahr-kuh-mahn suh feh oh pohn duh lahl-mah, zhoost ahn bah day-z-es-cah-lyay"
+  },
+  {
+    "id": "lost_01",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Parent",
+    "french": "Excusez-moi ! Aidez-moi, s'il vous plaît. Je ne trouve plus mon fils.",
+    "english": "Excuse me! Help me, please. I cannot find my son.",
+    "phonetic": "ex-coo-zay mwah! eh-day mwah, seel voo pleh. zhuh nuh troov ploo mohn fees"
+  },
+  {
+    "id": "lost_02",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Security Officer",
+    "french": "Gardez votre calme, Madame. Quel âge a-t-il et comment s'appelle-t-il ?",
+    "english": "Keep calm, madam. How old is he and what is his name?",
+    "phonetic": "gahr-day voh-truh cahl-muh, mah-dahm. kel ahzh ah-teel ay coh-mahn sah-pel-teel?"
+  },
+  {
+    "id": "lost_03",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Parent",
+    "french": "Il a sept ans et il s'appelle Lucas. Il porte un t-shirt rouge.",
+    "english": "He is seven years old and his name is Lucas. He is wearing a red t-shirt.",
+    "phonetic": "eel ah seht ahn ay eel sah-pel loo-cah. eel pohrt ahn tee-shuhrt roozh"
+  },
+  {
+    "id": "lost_04",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Security Officer",
+    "french": "D'accord. Où l'avez-vous vu pour la dernière fois ?",
+    "english": "Okay. Where did you last see him?",
+    "phonetic": "dah-cohr. oo lah-vay voo voo poor lah dair-nyair fwah?"
+  },
+  {
+    "id": "lost_05",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Parent",
+    "french": "C'était il y a cinq minutes, près de la boutique de souvenirs.",
+    "english": "It was five minutes ago, near the souvenir shop.",
+    "phonetic": "say-teh eel ee ah sank mee-noot, preh duh lah boo-teek duh soov-neer"
+  },
+  {
+    "id": "lost_06",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Security Officer",
+    "french": "Je lance immédiatement un appel radio à tous mes collègues.",
+    "english": "I will immediately broadcast a radio alert to all my colleagues.",
+    "phonetic": "zhuh lahns ee-may-dyat-mahn ahn nah-pel rah-dyoh ah too may coh-leg"
+  },
+  {
+    "id": "lost_07",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Parent",
+    "french": "Merci beaucoup. Je suis très inquiète.",
+    "english": "Thank you very much. I am very worried.",
+    "phonetic": "mair-see boh-coo. zhuh swee treh zahn-kyet"
+  },
+  {
+    "id": "lost_08",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Security Officer",
+    "french": "Ne bougez pas d'ici. Je reste avec vous en attendant les recherches.",
+    "english": "Do not move from here. I will stay with you while we search.",
+    "phonetic": "nuh boo-zhay pah dee-see. zhuh rest ah-vek voo ahn nah-tahn-dahn lay ruh-shairsh"
+  },
+  {
+    "id": "lost_09",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Parent",
+    "french": "Regardez ! Est-ce que c'est lui là-bas avec l'autre agent ?",
+    "english": "Look! Is that him over there with the other agent?",
+    "phonetic": "ruh-gahr-day! es-kuh say lwee lah-bah ah-vek loh-truh ah-zhahn?"
+  },
+  {
+    "id": "lost_10",
+    "category": "Emergency - Lost Child",
+    "dialogue_id": "lost_dialogue",
+    "speaker": "Security Officer",
+    "french": "Oui, c'est lui ! Lucas est retrouvé sain et sauf. Tout va bien.",
+    "english": "Yes, it is him! Lucas is found safe and sound. Everything is fine.",
+    "phonetic": "wee, say lwee! loo-cah eh ruh-troo-vay sahn ay sohf. too vah byah"
+  },
+  {
+    "id": "bike_01",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Customer",
+    "french": "Bonjour, nous voudrions louer cinq vélos pour la journée, s'il vous plaît.",
+    "english": "Hello, we would like to rent five bicycles for the day, please.",
+    "phonetic": "bohn-zhoor, noo voo-dree-ohn lwayer sank vay-loh poor lah zhoor-nay, seel voo pleh"
+  },
+  {
+    "id": "bike_02",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Rental Agent",
+    "french": "Bonjour. C'est pour quatre adultes et un enfant ?",
+    "english": "Hello. Is it for four adults and one child?",
+    "phonetic": "bohn-zhoor. say poor kahtruh ah-doolt ay ahn nahn-fahn?"
+  },
+  {
+    "id": "bike_03",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Customer",
+    "french": "Oui, c'est ça. Avez-vous un vélo adapté pour un enfant de sept ans ?",
+    "english": "Yes, that's it. Do you have a bike suitable for a seven-year-old child?",
+    "phonetic": "wee, say sah. ah-vay voo ahn vay-loh ah-dahp-tay poor ahn nahn-fahn duh seht ahn?"
+  },
+  {
+    "id": "bike_04",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Rental Agent",
+    "french": "Oui, nous avons des petits vélos avec des roues stabilisatrices ou des remorques.",
+    "english": "Yes, we have small bikes with training wheels or trailers.",
+    "phonetic": "wee, noo-z-ah-vohn day puh-tee vay-loh ah-vek day roo stah-bee-lee-zah-trees oo day ruh-mohrk"
+  },
+  {
+    "id": "bike_05",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Customer",
+    "french": "Un petit vélo avec des roues stabilisatrices sera parfait.",
+    "english": "A small bike with training wheels will be perfect.",
+    "phonetic": "ahn puh-tee vay-loh ah-vek day roo stah-bee-lee-zah-trees suh-rah pahr-feh"
+  },
+  {
+    "id": "bike_06",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Rental Agent",
+    "french": "D'accord. Fournissez-vous les casques et les antivols ?",
+    "english": "Understood. Do you provide helmets and locks?",
+    "phonetic": "dah-cohr. foor-nee-say voo lay cahsk ay lay zahn-tee-vol?"
+  },
+  {
+    "id": "bike_07",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Customer",
+    "french": "Le casque est obligatoire et inclus pour l'enfant, et les antivols sont gratuits.",
+    "english": "The helmet is mandatory and included for the child, and locks are free.",
+    "phonetic": "luh cahsk eh toh-blee-gah-twahr ay tahn-kloo poor lahn-fahn, ay lay-zahn-tee-vol sohn grah-twee"
+  },
+  {
+    "id": "bike_08",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Rental Agent",
+    "french": "Super. Quel est le tarif pour la location à la journée ?",
+    "english": "Great. What is the rate for the day rental?",
+    "phonetic": "soo-pair. kel eh luh tah-reef poor lah loh-cah-syohn ah lah zhoor-nay?"
+  },
+  {
+    "id": "bike_09",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Customer",
+    "french": "C'est dix euros par vélo adulte et six euros pour le vélo enfant.",
+    "english": "It's ten euros per adult bike and six euros for the child's bike.",
+    "phonetic": "say deez uh-roh pahr vay-loh ah-doolt ay seez uh-roh poor luh vay-loh nahn-fahn"
+  },
+  {
+    "id": "bike_10",
+    "category": "Renting Bicycles",
+    "dialogue_id": "bike_dialogue",
+    "speaker": "Rental Agent",
+    "french": "Très bien. Nous allons payer par carte. Voici ma pièce d'identité.",
+    "english": "Very well. We will pay by card. Here is my ID card.",
+    "phonetic": "treh byah. noo-z-ah-lohn peh-yay pahr cahrt. vwah-see mah pyes dee-dahn-tee-tay"
+  },
+  {
+    "id": "bakery_01",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Customer",
+    "french": "Bonjour, je voudrais deux baguettes bien cuites, s'il vous plaît.",
+    "english": "Hello, I would like two well-done baguettes, please.",
+    "phonetic": "bohn-zhoor, zhuh voo-dreh deuh bah-get byah cweet, seel voo pleh"
+  },
+  {
+    "id": "bakery_02",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Baker",
+    "french": "Bonjour. Voilà deux baguettes tradition. Et avec ceci ?",
+    "english": "Hello. Here are two traditional baguettes. And with this?",
+    "phonetic": "bohn-zhoor. vwah-lah deuh bah-get trah-dee-syohn. ay ah-vek suh-see?"
+  },
+  {
+    "id": "bakery_03",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Customer",
+    "french": "Je vais prendre aussi quatre éclairs au chocolat et une tarte aux fraises.",
+    "english": "I will also take four chocolate eclairs and a strawberry tart.",
+    "phonetic": "zhuh vay prahn-druh oh-see kahtruh ay-clair oh choo-coh-lah ay oon cahrt oh frehz"
+  },
+  {
+    "id": "bakery_04",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Baker",
+    "french": "Très bien. La tarte aux fraises est pour combien de personnes ?",
+    "english": "Very well. How many people is the strawberry tart for?",
+    "phonetic": "treh byah. lah cahrt oh frehz eh poor cohn-byah duh pair-sohn?"
+  },
+  {
+    "id": "bakery_05",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Customer",
+    "french": "Elle est pour cinq personnes. C'est pour notre pique-nique en famille.",
+    "english": "It is for five people. It's for our family picnic.",
+    "phonetic": "el eh poor sank pair-sohn. say poor noh-truh peek-neek ahn fah-mee-yuh"
+  },
+  {
+    "id": "bakery_06",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Baker",
+    "french": "C'est une excellente idée ! Souhaitez-vous des petites cuillères en plastique ?",
+    "english": "That's an excellent idea! Would you like small plastic spoons?",
+    "phonetic": "say toon ek-seh-lahnt ee-day! swoo-ay-tay voo day puh-teet cwee-yair ahn plas-teek?"
+  },
+  {
+    "id": "bakery_07",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Customer",
+    "french": "Oui, s'il vous plaît, cinq cuillères. L'enfant adore les fraises.",
+    "english": "Yes, please, five spoons. The child loves strawberries.",
+    "phonetic": "wee, seel voo pleh, sank cwee-yair. lahn-fahn ah-dohr lay frehz"
+  },
+  {
+    "id": "bakery_08",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Baker",
+    "french": "Voici les cuillères. Le total fait vingt-quatre euros.",
+    "english": "Here are the spoons. The total is twenty-four euros.",
+    "phonetic": "vwah-see lay cwee-yair. luh toh-tahl feh vahn-kahtruh uh-roh"
+  },
+  {
+    "id": "bakery_09",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Customer",
+    "french": "Voilà. Puis-je avoir un reçu pour notre comptabilité ?",
+    "english": "Here you go. Can I have a receipt for our accounts?",
+    "phonetic": "vwah-lah. pwee-zhuh-z-ah-vwahr ahn ruh-soo poor noh-truh cohmp-tah-bee-lee-tay?"
+  },
+  {
+    "id": "bakery_10",
+    "category": "At the Bakery",
+    "dialogue_id": "bakery_dialogue",
+    "speaker": "Baker",
+    "french": "Oui, bien sûr. Voici le reçu et vos gâteaux. Bonne journée !",
+    "english": "Yes, of course. Here is the receipt and your cakes. Have a good day!",
+    "phonetic": "wee, byah soor. vwah-see luh ruh-soo ay voh gah-toh. bohn zhoor-nay!"
   }
 ]

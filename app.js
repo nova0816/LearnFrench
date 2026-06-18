@@ -124,8 +124,8 @@ function renderExploreGrid() {
     const isFav = favorites.includes(s.id);
     const isMast = mastered.includes(s.id);
     
-    // Determine chat bubble alignment (left for Guest/Customer/Passenger, right for Staff)
-    const isLeft = s.speaker === 'Guest' || s.speaker === 'Passenger' || s.speaker === 'Customer';
+    // Determine chat bubble alignment (left for travelers/clients, right for staff)
+    const isLeft = ['Guest', 'Passenger', 'Customer', 'Visitor', 'Traveler', 'Tourist', 'Parent'].includes(s.speaker);
     const alignClass = isLeft ? 'left' : 'right';
 
     return `
@@ -250,7 +250,7 @@ function renderFavoritesGrid() {
 
   grid.innerHTML = favItems.map(s => {
     const isMast = mastered.includes(s.id);
-    const isLeft = s.speaker === 'Guest' || s.speaker === 'Passenger' || s.speaker === 'Customer';
+    const isLeft = ['Guest', 'Passenger', 'Customer', 'Visitor', 'Traveler', 'Tourist', 'Parent'].includes(s.speaker);
     const alignClass = isLeft ? 'left' : 'right';
 
     return `
